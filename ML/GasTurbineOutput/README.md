@@ -1,14 +1,14 @@
-<font size="5">Models</font>
+## Models
 * Regression<br><br>
 
-<font size="5">Performance</font>
+### Performance</font>
 * Does well for both test sets<br><br>
 
-<font size="3">Regression:</font>
+#### Regression:</font>
 ![power consumption prediction 1](reports\\figures\\power_consumption_prediction_1.png)
 ![power consumption prediction 2](reports\\figures\\power_consumption_prediction_2.png)
 
-<font size="5">Application</font>
+### Application
 * Predict future energy consumption based on past data, to enables better energy management and planning, helping utilities balance supply and demand
 * Predict power requirements to manage battery charge and discharge cycles effectively, to help extend battery life and ensure reliable power supply in applications like electric vehicles and renewable energy storage<br><br>
 

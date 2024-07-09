@@ -1,4 +1,4 @@
-<font size="5">Machine Learning</font><br>
+### Machine Learning projects<br>
 ML work showcase, reinforcing own understanding of field.<br>
 Most work on energy as I have experience with that specific domain.<br><br>
 

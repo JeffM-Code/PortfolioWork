@@ -1,19 +1,19 @@
-<font size="5">Models</font>
+## Models
 * Classification
 * Regression<br><br>
 
-<font size="5">Performance</font>
+### Performance
 * Both algorithms perform well, given the confusion matrices and graphs showing good accuracy in prediction<br><br>
 
-<font size="3">Classification:</font>
+### Classification:
 ![heat load confusion matrix](reports\\figures\\heat_load_confusion_matrix.png)
 ![cooling load confusion matrix](reports\\figures\\cooling_load_confusion_matrix.png)
 
-<font size="3">Regression:</font>
+#### Regression:
 ![heating load prediction](reports\\figures\\heating_load_prediction.png)
 ![cooling load prediction](reports\\figures\\cooling_load_prediction.png)
 
-<font size="5">Application</font>
+### Application
 * Assessment of heating and cooling needs of building designs
 * Plan renovations and improvements for existing buildings to move them to a lower energy load category
 * Optimize building features such as insulation, orientation, and glazing area to achieve better energy efficiency<br><br>
