@@ -5,8 +5,8 @@
 * Does well for both test sets<br><br>
 
 #### Regression:</font>
-![power consumption prediction 1](reports\\figures\\power_consumption_prediction_1.png)
-![power consumption prediction 2](reports\\figures\\power_consumption_prediction_2.png)
+![power consumption prediction 1](../reports/figures/power_consumption_prediction_1.png)
+![power consumption prediction 2](../reports/figures/power_consumption_prediction_2.png)
 
 ### Application
 * Predict future energy consumption based on past data, to enables better energy management and planning, helping utilities balance supply and demand

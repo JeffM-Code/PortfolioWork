@@ -6,12 +6,12 @@
 * Both algorithms perform well, given the confusion matrices and graphs showing good accuracy in prediction<br><br>
 
 ### Classification:
-![heat load confusion matrix](reports\\figures\\heat_load_confusion_matrix.png)
-![cooling load confusion matrix](reports\\figures\\cooling_load_confusion_matrix.png)
+![heat load confusion matrix](../reports/figures/heat_load_confusion_matrix.png)
+![cooling load confusion matrix](../reports/figures/cooling_load_confusion_matrix.png)
 
 #### Regression:
-![heating load prediction](reports\\figures\\heating_load_prediction.png)
-![cooling load prediction](reports\\figures\\cooling_load_prediction.png)
+![heating load prediction](../reports/figures/heating_load_prediction.png)
+![cooling load prediction](../reports/figures/cooling_load_prediction.png)
 
 ### Application
 * Assessment of heating and cooling needs of building designs
