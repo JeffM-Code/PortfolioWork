@@ -3,27 +3,14 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
-"""
-Metadata
-
-"""
-df_ex1 = pd.read_csv('train\\ex_1.csv')
-
-print(df_ex1.info())
-print(df_ex1.describe(include='all'))
-
-"""
-Regression - Train
-
-"""
 # Load the datasets for training
 file_paths = [
-    'train\\ex_9.csv',
-    'train\\ex_20.csv',
-    'train\\ex_21.csv',
-    'train\\ex_1.csv',
-    'train\\ex_23.csv',
-    'train\\ex_24.csv'
+    'data\\train\\ex_9.csv',
+    'data\\train\\ex_20.csv',
+    'data\\train\\ex_21.csv',
+    'data\\train\\ex_1.csv',
+    'data\\train\\ex_23.csv',
+    'data\\train\\ex_24.csv'
 ]
 
 # Load all datasets into a list
@@ -48,7 +35,7 @@ Regression - Test
 """
 # Load the test datasets
 test_file_paths = [
-    'test\\ex_4.csv'
+    'data\\test\\ex_22.csv'
 ]
 
 # Load all test datasets into a list
