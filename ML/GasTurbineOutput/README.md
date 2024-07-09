@@ -1,12 +1,13 @@
 ## Models
 * Regression<br><br>
 
-### Performance</font>
+### Performance
 * Does well for both test sets<br><br>
 
-#### Regression:</font>
-![power consumption prediction 1](reports/figures/power_consumption_prediction_1.png)
-![power consumption prediction 2](reports/figures/power_consumption_prediction_2.png)
+#### Regression:
+<img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="600"/><br>
+
+<img src="reports/figures/power_consumption_prediction_2.png" alt="power consumption prediction 2" width="600"/><br><br>
 
 ### Application
 * Predict future energy consumption based on past data, to enables better energy management and planning, helping utilities balance supply and demand
@@ -24,4 +25,4 @@ Published in Energy and Buildings, vol. 49<br>
 Link: https://archive.ics.uci.edu/dataset/994/micro+gas+turbine+electrical+energy+prediction<br>
 
 Their findings:<br>
-![paper findings](reports/figures/paper_model_figures.jpg)
+<img src="reports/figures/paper_model_figures.jpg" alt="power consumption prediction 2" width="700"/>
