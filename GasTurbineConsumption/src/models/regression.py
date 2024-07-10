@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 
 # Load the datasets for training
 file_paths = [
-    'data\\train\\ex_9.csv',
-    'data\\train\\ex_20.csv',
-    'data\\train\\ex_21.csv',
-    'data\\train\\ex_1.csv',
-    'data\\train\\ex_23.csv',
-    'data\\train\\ex_24.csv'
+    'GasTurbineConsumption\\data\\train\\ex_9.csv',
+    'GasTurbineConsumption\\data\\train\\ex_20.csv',
+    'GasTurbineConsumption\\data\\train\\ex_21.csv',
+    'GasTurbineConsumption\\data\\train\\ex_1.csv',
+    'GasTurbineConsumption\\data\\train\\ex_23.csv',
+    'GasTurbineConsumption\\data\\train\\ex_24.csv'
 ]
 
 # Load all datasets into a list
@@ -35,7 +35,7 @@ Regression - Test
 """
 # Load the test datasets
 test_file_paths = [
-    'data\\test\\ex_22.csv'
+    'GasTurbineConsumption\\data\\test\\ex_4.csv'
 ]
 
 # Load all test datasets into a list
