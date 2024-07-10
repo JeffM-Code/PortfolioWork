@@ -1,3 +1,9 @@
+## Project
+Building energy efficiency<br><br>
+
+## Info
+Using building heating and cooling data, the idea's to predict the heating and cooling needs of a building, to gauge efficiency.<br><br>
+
 ## Models
 * Classification
 * Regression<br><br>
