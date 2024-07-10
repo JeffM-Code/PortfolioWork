@@ -2,7 +2,7 @@
 * Regression<br><br>
 
 ### Performance
-* Does well for both test sets<br><br>
+* Does well for both test sets, as predicted consumption curve is close to measured curve using both test sets<br><br>
 
 #### Regression:
 <img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="600"/><br>

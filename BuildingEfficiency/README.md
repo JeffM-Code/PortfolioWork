@@ -3,7 +3,10 @@
 * Regression<br><br>
 
 ### Performance
-* Both algorithms perform well, given the confusion matrices and graphs showing good accuracy in prediction<br><br>
+* Both algorithms perform well, given the confusion matrices and graphs showing good accuracy in prediction
+    * The confusion matrix (classification) shows that it correctly classifies each label most of the time, with a few outliers
+    * It also shows good predictive capabilities with the actual vs predicted graphs (regression), as most points are close to $x=y$ curve that shows the ideal scenario
+<br><br>
 
 ### Classification:
 <img src="reports/figures/heat_load_confusion_matrix.png" alt="heat load confusion matrix" width="600"/><br>
