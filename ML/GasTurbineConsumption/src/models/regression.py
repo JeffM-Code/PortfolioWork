@@ -1,16 +1,19 @@
 import pandas as pd
+import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
+from sklearn.model_selection import learning_curve
+import seaborn as sns
 
 # Load the datasets for training
 file_paths = [
-    'GasTurbineConsumption\\data\\train\\ex_9.csv',
-    'GasTurbineConsumption\\data\\train\\ex_20.csv',
-    'GasTurbineConsumption\\data\\train\\ex_21.csv',
-    'GasTurbineConsumption\\data\\train\\ex_1.csv',
-    'GasTurbineConsumption\\data\\train\\ex_23.csv',
-    'GasTurbineConsumption\\data\\train\\ex_24.csv'
+    'ML\\GasTurbineConsumption\\data\\train\\ex_9.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\ex_20.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\ex_21.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\ex_1.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\ex_23.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\ex_24.csv'
 ]
 
 # Load all datasets into a list
@@ -35,7 +38,7 @@ Regression - Test
 """
 # Load the test datasets
 test_file_paths = [
-    'GasTurbineConsumption\\data\\test\\ex_4.csv'
+    'ML\\GasTurbineConsumption\\data\\test\\ex_4.csv'
 ]
 
 # Load all test datasets into a list
@@ -54,6 +57,29 @@ y_pred = model.predict(X_test)
 # Calculate the mean squared error on the test data
 mse = mean_squared_error(y_test, y_pred)
 print("Mean Squared Error on Test Data:", mse)
+
+train_sizes, train_scores, val_scores = learning_curve(
+    model, X_train, y_train, cv=5, scoring='neg_mean_squared_error', 
+    train_sizes=np.linspace(0.1, 1.0, 10)
+)
+
+train_scores_mean = -train_scores.mean(axis=1)
+val_scores_mean = -val_scores.mean(axis=1)
+
+# Learning curves
+plt.plot(train_sizes, train_scores_mean, 'o-', color='blue', label='Training error')
+plt.plot(train_sizes, val_scores_mean, 'o-', color='red', label='Validation error')
+plt.xlabel('Training Size')
+plt.ylabel('Mean Squared Error')
+plt.title('Learning Curves')
+plt.legend(loc='best')
+plt.show()
+
+# Error distribution plot 
+sns.histplot(y_pred - y_test, kde=True, bins=30)
+plt.xlabel('Prediction Error')
+plt.title('Error Distribution')
+plt.show()
 
 # Plot the ground truth and predictions
 plt.figure(figsize=(10, 6))
