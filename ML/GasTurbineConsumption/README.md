@@ -14,11 +14,11 @@ Ideally more machinery or tooling can be more accurately simulated, to help info
     * Will need to implement model optimization techniques to help lower error
 * The error distribution is centered around zero, which is good, but should ideally be symmetrical around zero as well
 
-#### Regression
-##### Learning curve:
+### Regression
+#### Learning curve:
 <img src="reports/figures/learning_curves.png" alt="learning curves" width="600"/><br><br>
 
-##### Error distribution:
+#### Error distribution:
 <img src="reports/figures/error_distribution.png" alt="error distribution" width="600"/><br><br>
 
 ### Application
