@@ -1,5 +1,5 @@
 ## Project
-Gas turbine consumption<br><br>
+Micro gas turbine energy consumption<br><br>
 
 ## Info
 Using data from an experiment done using a micro gas turbine, the idea's to predict its energy usage. This model can then help inform decisions on the tooling itself, as its performance can be emulated virtually via a predictive ML model, so it can be tested on a different environment and the results of that test can be treated as being reasonably accurate, depending on model performance on emulating its true behavior.<br>

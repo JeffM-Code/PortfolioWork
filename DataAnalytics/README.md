@@ -5,4 +5,5 @@ My work during my data analyst trainee programme:<br>
 * [Site effectiveness](https://app.powerbi.com/groups/me/reports/08643e90-7e01-43b2-b161-c2f8cc074df5/d49a9e4ae85df4a6f6dc?experience=power-bi) <br>
 * [Top item profitability](https://app.powerbi.com/groups/me/reports/5dc05b37-0149-4721-934f-407fb3d1eeae/ReportSection?experience=power-bi)<br><br>
 
-Data was queried from BigQuery on a 400M+ row datasets.
+Data was queried from BigQuery on a 400M+ row datasets.<br><br>
+In case the links don't work, i've linked to a pdf file with all of them [here](https://github.com/JeffM-Code/PortfolioWork/tree/main/DataAnalytics/project_reports).
