@@ -31,7 +31,7 @@ Using the test sets:<br>
 
 It does well for both test sets, as predicted consumption curve is close to measured curve using for both.<br><br>
 
-##### Practical:
+#### Practical:
 * Predict future energy consumption based on past data, to enables better energy management and planning, helping utilities balance supply and demand
 * Predict power requirements to manage battery charge and discharge cycles effectively, to help extend battery life and ensure reliable power supply in applications like electric vehicles and renewable energy storage<br><br><br>
 

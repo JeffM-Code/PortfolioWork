@@ -25,7 +25,7 @@ Using building heating and cooling data, the idea's to predict the heating and c
 <img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="600"/><br><br>
 
 ### Application
-##### Practical:
+#### Practical:
 * Assessment of heating and cooling needs of building designs
 * Plan renovations and improvements for existing buildings to move them to a lower energy load category
 * Optimize building features such as insulation, orientation, and glazing area to achieve better energy efficiency<br><br><br>
