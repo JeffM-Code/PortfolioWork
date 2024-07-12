@@ -4,7 +4,7 @@ Imbalance pricing insights<br><br>
 ## Info
 The wholesale electricity market is set up so that supply should always meet demand on the transmission system, thorough ensuring the contracts between parties including organizations that require electricity for their customers (suppliers) and organizations that produce electricity (generators) are such that balancing actions given to a party, are in accordance with agreed rules, to either increase or decrease generation, or increase or decrease demand, depending on the appropriate balancing action, and the dataset utilized pertains to this balancing act, more specifically referred to as **imbalance pricing**.<br><br>
 
-#### Imbalance pricing analysis:
+#### Imbalance pricing analysis:<br>
 <img src="reports/figures/analysis.png" alt="price scatter" width="650"/><br><br>
 
 <br><br>
@@ -39,7 +39,7 @@ For unlocking value from this data, certain strategic insights should be determi
 * This varied performance in the model's evaluation is well reflected by the predicted vs. actual plot, with some values being concentrated close to the ideal line, but some concentrated away from it
 <br><br>
 
-#### Regression
+#### LSTM
 ##### Actual vs Prediction:
 <img src="reports/figures/accepted_offer_volume_scatter.png" alt="accepted offer volume scatter" width="470"/><br><br>
 
@@ -49,7 +49,7 @@ For unlocking value from this data, certain strategic insights should be determi
 * The scatter-plot reflects this chaos as well
 <br><br>
 
-#### Regression
+#### LSTM
 ##### Actual vs Prediction:
 <img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470"/><br><br>
 
