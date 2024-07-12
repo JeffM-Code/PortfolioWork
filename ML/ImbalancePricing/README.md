@@ -5,7 +5,7 @@ Imbalance pricing insights<br><br>
 The wholesale electricity market is set up so that supply should always meet demand on the transmission system, thorough ensuring the contracts between parties including organizations that require electricity for their customers (suppliers) and organizations that produce electricity (generators) are such that balancing actions given to a party, are in accordance with agreed rules, to either increase or decrease generation, or increase or decrease demand, depending on the appropriate balancing action, and the dataset utilized pertains to this balancing act, more specifically referred to as **imbalance pricing**.<br><br>
 
 #### Imbalance pricing analysis:
-
+<img src="reports/figures/analysis.png" alt="price scatter" width="500"/><br><br>
 
 <br><br>
 
