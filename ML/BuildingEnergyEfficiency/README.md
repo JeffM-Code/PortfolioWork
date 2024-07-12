@@ -33,7 +33,7 @@ So, using building heating and cooling data, the idea's to predict the heating a
 * Optimize building features such as insulation, orientation, and glazing area to achieve better energy efficiency<br><br><br>
 
 ## Notebook
-https://colab.research.google.com/drive/1wD2YNJqh0A_YSL2IvcBuuTxrqtdLeyrE#scrollTo=y0Sa7Ikcbe0F<br><br>
+https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h<br><br>
 
 ## References
 Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br>

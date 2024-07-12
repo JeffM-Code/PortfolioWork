@@ -4,7 +4,7 @@ Micro gas turbine energy consumption<br><br>
 ## Info
 Using data from an experiment done using a micro gas turbine, the idea's to predict its energy usage. This model can then help inform decisions on the tooling itself, as its performance can be emulated virtually via a predictive ML model, so it can be tested on a different environment and the results of that test can be treated as being reasonably accurate, depending on model performance on emulating its true behavior.<br>
 
-Ideally more machinery or tooling can be more accurately simulated, to help inform decisions on their use, and drive business decisions. NVDIA seems to want to venture into simulation via ML as well (https://developer.nvidia.com/blog/develop-physics-informed-machine-learning-models-with-graph-neural-networks/), which personally I admire a lot, and am trying to eventually get simialr work done in that area as well, starting with apply ML to real-world situations through my understanding of ML.<br><br>
+Ideally more machinery or tooling can be more accurately simulated, to help inform decisions on their use, and drive business decisions. NVDIA seems to want to venture into simulation via ML as well (https://developer.nvidia.com/blog/develop-physics-informed-machine-learning-models-with-graph-neural-networks/), which personally I admire a lot, and am trying to eventually get similar work done in that area too, starting with application of ML to real-world tooling or infrastructure processes through my understanding of it.<br><br>
 
 ### Models
 * Regression<br><br>

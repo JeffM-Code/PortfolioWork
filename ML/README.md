@@ -1,4 +1,4 @@
-## Machine Learning Projects
-ML models predict:<br>
-* Heating & cooling efficiency for building
-* Energy consumption for micro gas turbine<br><br>
+## Machine Learning Projects<br>
+* Building heating / cooling efficiency modelling
+* Micro gas turbine energy consumption
+* Imbalance pricing insights
