@@ -2,7 +2,9 @@
 Building energy efficiency<br><br>
 
 ## Info
-Using building heating and cooling data, the idea's to predict the heating and cooling needs of a building, to gauge efficiency.<br><br>
+To address the problem of energy performance of buildings (EPB) due to growing concerns negative environmental impact of energy waste, one way to alleviate the ever increasing demand for additional energy supply for the robust implementation of energy-efficient building design. The computation of the heating load (HL) and the cooling load (CL) is required to determine the specifications of the heating and cooling equipment needed to maintain comfortable indoor air conditions, and in applying machine learning capabilities, this computational work can be done in a way that promotes data-driven insights into building design, and may produce value in increased building energy efficiency through reducing time and resources it may take to conduct necessary computations or simulations for determining better building efficiencies.<br><br>
+
+So, using building heating and cooling data, the idea's to predict the heating and cooling needs of a building, to gauge means of improving efficiency.<br><br>
 
 ### Models
 * Classification
@@ -26,7 +28,7 @@ Using building heating and cooling data, the idea's to predict the heating and c
 
 ### Application
 #### Practical:
-* Assessment of heating and cooling needs of building designs
+* (Efficient) Assessment of heating and cooling needs of building designs
 * Plan renovations and improvements for existing buildings to move them to a lower energy load category
 * Optimize building features such as insulation, orientation, and glazing area to achieve better energy efficiency<br><br><br>
 
