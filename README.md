@@ -6,4 +6,6 @@ I try to include as much interactivity with my work as possible, through noteboo
 My projects in data analytics were completed using large datasets in BigQuerry, to unlock insightful details and to provide strong, actionable recommendations based on the analytical work completed. Those recommendations, were then presented to relevant stakeholders, to promote a data-driven approach to decision-making.<br><br>
 
 ### Machine Learning<br>
-ML work showcase to reinforce own understanding of the field. Most of the work is based on energy, as I personally have the most experience with that specific domain. Am also trying to incorporate as data science to all ML projects as well, as I am also currently studying that field.
+ML work showcase to reinforce own understanding of the field. Most of the work is based on energy, as I personally have the most experience with that specific domain. Am also trying to incorporate as data science to all ML projects as well, as I am also currently studying that field.<br><br>
+
+As I continue to learn ML, data science and data analytics, I am constantly reinforcing my learning with a complete project, so I am normally working on more projects that I should be able to showcase after I make sure they are at least interesting and informative to read for better engagement, to avoid something uninteresting and not worth the time.

@@ -1,4 +1,4 @@
 ## Machine Learning Projects
-ML models determined predict:<br>
+Completed ML models predict:<br>
 * Heating & cooling efficiency for building
-* Energy consumption for micro gas turbine
+* Energy consumption for micro gas turbine<br><br>
