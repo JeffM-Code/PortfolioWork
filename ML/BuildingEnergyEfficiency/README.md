@@ -18,8 +18,8 @@ So, using building heating and cooling data, the idea's to predict the heating a
 
 ### Classification
 #### Confusion matrices:
-<img src="reports/figures/heat_load_confusion_matrix.png" alt="heat load confusion matrix" width="600"/><br><br>
-<img src="reports/figures/cooling_load_confusion_matrix.png" alt="cooling load confusion matrix" width="600"/><br><br>
+<img src="reports/figures/heat_load_confusion_matrix.png" alt="heat load confusion matrix" width="500"/><br><br>
+<img src="reports/figures/cooling_load_confusion_matrix.png" alt="cooling load confusion matrix" width="500"/><br><br>
 
 ### Regression
 #### Actual vs Prediction:

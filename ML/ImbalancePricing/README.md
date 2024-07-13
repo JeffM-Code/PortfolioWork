@@ -31,7 +31,7 @@ For unlocking value from this data, certain strategic insights should be determi
 
 #### LSTM
 ##### Actual vs Prediction:
-<img src="reports/figures/price_scatter.png" alt="price scatter" width="470"/><br><br>
+<img src="reports/figures/price_scatter.png" alt="price scatter" width="470" height="360"/><br><br>
 
 #### <u>Total Accepted Offer Volume</u>
 * With an MSE of 27879.55, and RMSE of 166.97 it's also a poorly performing model that's off by a rather large magnitude
@@ -41,7 +41,7 @@ For unlocking value from this data, certain strategic insights should be determi
 
 #### LSTM
 ##### Actual vs Prediction:
-<img src="reports/figures/accepted_offer_volume_scatter.png" alt="accepted offer volume scatter" width="470"/><br><br>
+<img src="reports/figures/accepted_offer_volume_scatter.png" alt="accepted offer volume scatter" width="470" height="360"/><br><br>
 
 
 #### <u>Net Imbalance Volume</u>
@@ -51,18 +51,18 @@ For unlocking value from this data, certain strategic insights should be determi
 
 #### LSTM
 ##### Actual vs Prediction:
-<img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470"/><br><br>
+<img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470" height="360"/><br><br>
 
 
 ### Application
 ##### System buy / sell price model:<br><br>
-<img src="reports/figures/price_pred.png" alt="heating load prediction" width="500"/><br><br>
+<img src="reports/figures/price_pred.png" alt="heating load prediction" width="650"/><br><br>
 
 ##### Accepted offer volume:<br><br>
-<img src="reports/figures/accepted_offer_volume_pred.png" alt="heating load prediction" width="500"/><br><br>
+<img src="reports/figures/accepted_offer_volume_pred.png" alt="heating load prediction" width="650"/><br><br>
 
 ##### Net imbalance volume:<br><br>
-<img src="reports/figures/niv_pred.png" alt="heating load prediction" width="500"/><br><br>
+<img src="reports/figures/niv_pred.png" alt="heating load prediction" width="650"/><br><br>
 
 Each model had different evaluation performances, with the first (price) being reasonable, with worsening performance with each subsequent one (offer volume -> NIV), which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of varience than one with fewer, so that's likely the reason, but further analysis and model tuning will be necessary to see if this, or other factors are in effect here.<br><br>
 
