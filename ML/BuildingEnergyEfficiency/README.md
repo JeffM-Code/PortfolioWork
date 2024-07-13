@@ -7,19 +7,20 @@ To address the problem of energy performance of buildings (EPB) due to growing c
 The computation of the heating load (HL) and the cooling load (CL) is required to determine the specifications of the heating and cooling equipment needed to maintain comfortable indoor air conditions, and in applying machine learning capabilities, this computational work can be done in a way that promotes data-driven insights into building design, and may produce value in increased building energy efficiency through reducing time and resources it may take to conduct necessary computations or simulations for determining better building efficiencies.<br><br>
 
 #### Thermal computation:<br><br>
-<img src="reports/figures/building_simulation_thermal_comfort.jpg" alt="building simulation thermal comfort" width="590"/><br>
-*Figure 1* - Illustration of heating & cooling computation via computational fluid dynamic simulation of building.<br><br>
+<img src="reports/figures/building_simulation_thermal_comfort.jpg" alt="building simulation thermal comfort" width="590"/><br><br>
+*Figure 1 - Illustration of heating & cooling computation via computational fluid dynamic simulation of building.*<br><br>
 
 So, using building heating and cooling data, the idea's to predict the heating and cooling needs of a building, to gauge means of improving efficiency.<br><br>
 
 #### Correlation heatmap:<br><br>
 <img src="reports/figures/correlation_heatmap.png" alt="correlation heatmap" width="550"/><br>
-*Figure 2* - Correlation heatmap of dateset variables.<br><br>
+*Figure 2 - Correlation heatmap of dateset variables.*<br><br>
 
 Highly correlated value are closest to 1, and are more red, and less correlated are more blue and closer to -1. This informs key aspects of model selection, including feature selection, where features having high correlation with heating and cooling load target variables, are good candidates to be included in the model as they are most likely to have a significant impact on prediction.<br><br>
 
 #### Boxplots:<br><br>
-<img src="reports/figures/boxplots.png" alt="boxplots" width="550"/><br><br>*Figure 3* - Boxplot of dateset variables.<br><br>
+<img src="reports/figures/boxplots.png" alt="boxplots" width="550"/><br><br>
+*Figure 3 - Boxplot of dateset variables.*<br><br>
 
 Variables such as overall height, orientation, glazing area and so on are very tightly compact and have small ranges, indicating low variance in their data, whereas surface area, wall area, and roof area have higher values and larger ranges, indicating a higher variance in the dataset. Linear regression models are sensitive to variance, so this plot helps to inform decisions in feature selection.<br><br>
 
@@ -36,10 +37,10 @@ Variables such as overall height, orientation, glazing area and so on are very t
 ### Classification
 #### Confusion matrices:
 <img src="reports/figures/heat_load_confusion_matrix.png" alt="heat load confusion matrix" width="600"/><br><br>
-*Figure 4* - Heating load classification confusion matrix.<br><br>
+*Figure 4 - Heating load classification confusion matrix.*<br><br>
 
 <img src="reports/figures/cooling_load_confusion_matrix.png" alt="cooling load confusion matrix" width="600"/><br><br>
-*Figure 5* - Cooling load classification confusion matrix.<br><br>
+*Figure 5 - Cooling load classification confusion matrix.*<br><br>
 
 
 #### Scores:<br><br>
@@ -78,10 +79,10 @@ Cooling Load Classification Accuracy: 96.75%
 ### Regression
 #### Actual vs Prediction:<br><br>
 <img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="650" height="350"/><br><br>
-*Figure 5* - Actual vs predicted heating load plot.<br><br>
+*Figure 5 - Actual vs predicted heating load plot.*<br><br>
 
 <img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="650" height="350"/><br><br>
-*Figure 6* - Actual vs predicted cooling load plot.<br><br>
+*Figure 6 - Actual vs predicted cooling load plot.*<br><br>
 
 #### Evaluation metrics:<br><br>
 ```
