@@ -1,4 +1,4 @@
-## Machine Learning Projects<br>
-* Building heating / cooling efficiency modelling
-* Micro gas turbine energy consumption
-* Imbalance pricing insights
+## Machine Learning Projects
+* Building heating / cooling efficiency modelling<br><br>
+* Micro gas turbine energy consumption<br><br>
+* Imbalance pricing insights<br><br>
