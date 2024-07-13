@@ -70,7 +70,7 @@ R2 Score: 0.7708270743038639
 <br><br>
 
 #### LSTM
-##### Actual vs Prediction:
+##### Actual vs Prediction:<br><br>
 <img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470" height="400"/><br><br>
 *Figure 4 - Actual vs predicted NIV scatter plot.*<br><br>
 

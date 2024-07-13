@@ -18,7 +18,7 @@ Ideally more machinery or tooling can be more accurately simulated, to help info
 <img src="reports/figures/electrical_power_time.png" alt="micro gas turbine" width="590"/><br><br>
 *Figure 3 - Electrical power vs time plot.*<br><br>
 
-The paper the data's based on asserts that the relationship between input voltage and electrical power is not one-to-one, but rather time-dependent and dynamic, meaning that the electrical power output is influenced by the input voltage, but it also exhibits temporal dynamics such as transitions and stationary phases, leading to the difference in geometric profiles.<br>
+The paper the data's based on asserts that the relationship between input voltage and electrical power is not one-to-one, but rather time-dependent and dynamic, meaning that the electrical power output is influenced by the input voltage, but it also exhibits temporal dynamics such as transitions and stationary phases, leading to the difference in geometric profiles.<br><br>
 By analyzing these plots, one may determine a correlation between the input voltage and electrical power, or whether the relationship is more complex and involves time-dependent dynamics. However, the models developed will focus more on the power consumed by the turbine to attempt to accurately emulate its behavior.<br><br>
 
 ### Models
