@@ -70,8 +70,15 @@ Cooling Load Classification Accuracy: 96.75%
 <img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="650" height="350"/><br><br>
 <img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="650" height="350"/><br><br>
 
+
+#### Evaluation metrics:<br><br>
+```
+Heating Load - Mean Squared Error: 9.15171647030883, R2 Score: 0.9121982116568189
+Cooling Load - Mean Squared Error: 9.896048105943512, R2 Score: 0.8931972456590836
+```
+
 ### Application
-Using the test set, we get the following results,<br><br>
+Through the test set, we get the following results,<br>
 
 #### Actual vs Prediction:<br><br>
 ```
@@ -107,6 +114,8 @@ Predictions for Cooling Load:
 151               high                    high
 152               high                    high
 153             medium                  medium
+
+[154 rows x 2 columns]
 
 ```
 <br>
