@@ -1,72 +1,78 @@
 import pandas as pd
-import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.model_selection import learning_curve
 import seaborn as sns
 
 file_paths = [
-    'ML\\GasTurbineConsumption\\data\\train\\ex_9.csv',
-    'ML\\GasTurbineConsumption\\data\\train\\ex_20.csv',
-    'ML\\GasTurbineConsumption\\data\\train\\ex_21.csv',
-    'ML\\GasTurbineConsumption\\data\\train\\ex_1.csv',
-    'ML\\GasTurbineConsumption\\data\\train\\ex_23.csv',
-    'ML\\GasTurbineConsumption\\data\\train\\ex_24.csv'
+    'ML\\GasTurbineConsumption\\data\\train\\train_1.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\train_2.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\train_3.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\train_4.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\train_5.csv',
+    'ML\\GasTurbineConsumption\\data\\train\\train_6.csv',
+    'ML\\GasTurbineConsumption\\data\\test\\test_1.csv'
 ]
 
-dfs = [pd.read_csv(file) for file in file_paths]
+train_dfs = [pd.read_csv(file) for file in file_paths]
+train_df = pd.concat(train_dfs, ignore_index=True)
 
-training_data = pd.concat(dfs, ignore_index=True)
-X_train = training_data[['time', 'input_voltage']]
-y_train = training_data['el_power']
+test_df = pd.read_csv('ML\\GasTurbineConsumption\\data\\test\\test_1.csv')
+
+X_train = train_df[['input_voltage']]
+y_train = train_df['el_power']
+
+X_test = test_df[['input_voltage']]
+y_test = test_df['el_power']
 
 model = LinearRegression()
 
 model.fit(X_train, y_train)
 
-test_file_paths = [
-    'ML\\GasTurbineConsumption\\data\\test\\ex_4.csv'
-]
-
-test_dfs = [pd.read_csv(file) for file in test_file_paths]
-
-test_data = pd.concat(test_dfs, ignore_index=True)
-
-X_test = test_data[['time', 'input_voltage']]
-y_test = test_data['el_power']
-
 y_pred = model.predict(X_test)
 
 mse = mean_squared_error(y_test, y_pred)
-print("Mean Squared Error on Test Data:", mse)
+r2 = r2_score(y_test, y_pred)
+print(f'Mean Squared Error: {mse}')
+print(f'R^2 Score: {r2}')
 
-train_sizes, train_scores, val_scores = learning_curve(
-    model, X_train, y_train, cv=5, scoring='neg_mean_squared_error', 
+# Error distribution with KDE curve
+errors = y_test - y_pred
+plt.figure(figsize=(12, 6))
+sns.histplot(errors, bins=30, kde=True, color='blue')
+plt.xlabel('Prediction Error [W]')
+plt.ylabel('Frequency')
+plt.title('Distribution of Prediction Errors')
+plt.grid(True)
+plt.show()
+
+# Learning curves
+train_sizes, train_scores, test_scores = learning_curve(
+    model, X_train, y_train, cv=5, scoring='neg_mean_squared_error',
     train_sizes=np.linspace(0.1, 1.0, 10)
 )
 
 train_scores_mean = -train_scores.mean(axis=1)
-val_scores_mean = -val_scores.mean(axis=1)
+test_scores_mean = -test_scores.mean(axis=1)
 
-plt.plot(train_sizes, train_scores_mean, 'o-', color='blue', label='Training error')
-plt.plot(train_sizes, val_scores_mean, 'o-', color='red', label='Validation error')
-plt.xlabel('Training Size')
+plt.figure(figsize=(12, 6))
+plt.plot(train_sizes, train_scores_mean, 'o-', color='blue', label='Training Error')
+plt.plot(train_sizes, test_scores_mean, 'o-', color='red', label='Validation Error')
+plt.xlabel('Training Set Size')
 plt.ylabel('Mean Squared Error')
 plt.title('Learning Curves')
-plt.legend(loc='best')
-plt.show()
-
-sns.histplot(y_pred - y_test, kde=True, bins=30)
-plt.xlabel('Prediction Error')
-plt.title('Error Distribution')
-plt.show()
-
-plt.figure(figsize=(10, 6))
-plt.plot(test_data['time'], y_test, label='Ground Truth', color='gray', alpha=0.6)
-plt.plot(test_data['time'], y_pred, label='Test Prediction', color='green', linestyle='--')
-plt.xlabel('Time (sec)')
-plt.ylabel('Electrical Power (W)')
-plt.title('Electrical Power Predictions over Time')
 plt.legend()
+plt.grid(True)
+plt.show()
+
+plt.figure(figsize=(12, 6))
+plt.plot(test_df['time'], y_test, color='blue', label='Actual Electrical Power')
+plt.plot(test_df['time'], y_pred, color='green', linestyle='--', label='Predicted Electrical Power')
+plt.xlabel('Time [sec]')
+plt.ylabel('Electrical Power [W]')
+plt.title('Actual vs. Predicted Electrical Power over Time')
+plt.legend()
+plt.grid(True)
 plt.show()
