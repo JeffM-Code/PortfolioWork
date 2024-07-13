@@ -16,17 +16,17 @@ Ideally more machinery or tooling can be more accurately simulated, to help info
 
 ### Regression
 #### Learning curve:
-<img src="reports/figures/learning_curves.png" alt="learning curves" width="600"/><br><br>
+<img src="reports/figures/learning_curves.png" alt="learning curves" width="550"/><br><br>
 
 #### Error distribution:
-<img src="reports/figures/error_distribution.png" alt="error distribution" width="600"/><br><br>
+<img src="reports/figures/error_distribution.png" alt="error distribution" width="550"/><br><br>
 
 ### Application
 Using the test sets:<br>
 
-<img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="500"/><br><br>
+<img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="600"/><br><br>
 
-<img src="reports/figures/power_consumption_prediction_2.png" alt="power consumption prediction 2" width="500"/><br><br>
+<img src="reports/figures/power_consumption_prediction_2.png" alt="power consumption prediction 2" width="600"/><br><br>
 
 
 It does well for both test sets, as predicted consumption curve is close to measured curve using for both.<br><br>

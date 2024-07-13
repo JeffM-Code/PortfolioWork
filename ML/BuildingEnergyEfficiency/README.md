@@ -23,8 +23,8 @@ So, using building heating and cooling data, the idea's to predict the heating a
 
 ### Regression
 #### Actual vs Prediction:
-<img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="600"/><br><br>
-<img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="600"/><br><br>
+<img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="650" height="350"/><br><br>
+<img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="650" height="350"/><br><br>
 
 ### Application
 #### Practical:
