@@ -1,13 +1,56 @@
 import pandas as pd
-from ucimlrepo import fetch_ucirepo
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.metrics import classification_report, confusion_matrix
+from tabulate import tabulate
+
+train_file_path = 'ML\\BuildingEnergyEfficiency\\data\\train\\train.csv'
+test_file_path = 'ML\\BuildingEnergyEfficiency\\data\\test\\test.csv' 
+
+train_data = pd.read_csv(train_file_path)
+test_data = pd.read_csv(test_file_path)
 
 def create_classes(value, bins, labels):
     return pd.cut(value, bins=bins, labels=labels)
+
+bins = [0, 10, 20, 40, 100]
+labels = ['low', 'medium', 'high', 'very high']
+
+train_data['Heating Load Class'] = create_classes(train_data['Y1'], bins, labels)
+train_data['Cooling Load Class'] = create_classes(train_data['Y2'], bins, labels)
+
+train_data = train_data.drop(['Y1', 'Y2'], axis=1)
+
+X_train = train_data.drop(['Heating Load Class', 'Cooling Load Class'], axis=1)
+y_heating_train = train_data['Heating Load Class']
+y_cooling_train = train_data['Cooling Load Class']
+
+test_data['Heating Load Class'] = create_classes(test_data['Y1'], bins, labels)
+test_data['Cooling Load Class'] = create_classes(test_data['Y2'], bins, labels)
+
+test_data = test_data.drop(['Y1', 'Y2'], axis=1)
+
+X_test = test_data.drop(['Heating Load Class', 'Cooling Load Class'], axis=1)
+y_heating_test = test_data['Heating Load Class']
+y_cooling_test = test_data['Cooling Load Class']
+
+clf_heating = RandomForestClassifier(random_state=42)
+clf_heating.fit(X_train, y_heating_train)
+
+clf_cooling = RandomForestClassifier(random_state=42)
+clf_cooling.fit(X_train, y_cooling_train)
+
+y_heating_pred = clf_heating.predict(X_test)
+heating_cm = confusion_matrix(y_heating_test, y_heating_pred)
+heating_accuracy = accuracy_score(y_heating_test, y_heating_pred)
+heating_report = classification_report(y_heating_test, y_heating_pred, output_dict=True)
+
+y_cooling_pred = clf_cooling.predict(X_test)
+cooling_cm = confusion_matrix(y_cooling_test, y_cooling_pred)
+cooling_accuracy = accuracy_score(y_cooling_test, y_cooling_pred)
+cooling_report = classification_report(y_cooling_test, y_cooling_pred, output_dict=True)
 
 def plot_confusion_matrix(cm, classes, title='Confusion Matrix'):
     plt.figure(figsize=(10, 7))
@@ -15,64 +58,24 @@ def plot_confusion_matrix(cm, classes, title='Confusion Matrix'):
     plt.title(title)
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
+    plt.show()
 
-def plot_feature_importance(importances, feature_names, title='Feature Importance'):
-    plt.figure(figsize=(10, 5))
-    feature_importance = pd.Series(importances, index=feature_names)
-    feature_importance.nlargest(10).plot(kind='barh', title=title)
-    plt.xlabel('Importance')
+plot_confusion_matrix(heating_cm, clf_heating.classes_, title='Heating Load Classification')
+plot_confusion_matrix(cooling_cm, clf_cooling.classes_, title='Cooling Load Classification')
 
-energy_efficiency = fetch_ucirepo(id=242)
-X = energy_efficiency.data.features
-y = energy_efficiency.data.targets
+heating_report_df = pd.DataFrame(heating_report).transpose()
+cooling_report_df = pd.DataFrame(cooling_report).transpose()
 
-data = pd.concat([X, y], axis=1)
+print("Heating Load Classification Accuracy: {:.2f}%\n".format(heating_accuracy * 100))
+print(tabulate(heating_report_df, headers='keys', tablefmt='psql'))
+print("\nCooling Load Classification Accuracy: {:.2f}%\n".format(cooling_accuracy * 100))
+print(tabulate(cooling_report_df, headers='keys', tablefmt='psql'))
 
-feature_mapping = {
-    'X1': 'Relative Compactness',
-    'X2': 'Surface Area',
-    'X3': 'Wall Area',
-    'X4': 'Roof Area',
-    'X5': 'Overall Height',
-    'X6': 'Orientation',
-    'X7': 'Glazing Area',
-    'X8': 'Glazing Area Distribution'
-}
+test_data['Heating Load Prediction'] = y_heating_pred
+test_data['Cooling Load Prediction'] = y_cooling_pred
 
-data = data.rename(columns=feature_mapping)
+print("Predictions for Heating Load:\n")
+print(test_data[['Heating Load Class', 'Heating Load Prediction']])
 
-bins = [0, 10, 20, 40, 100]
-labels = ['low', 'medium', 'high', 'very high']
-
-data['Heating Load Class'] = create_classes(data['Y1'], bins, labels)
-data['Cooling Load Class'] = create_classes(data['Y2'], bins, labels)
-
-data = data.drop(['Y1', 'Y2'], axis=1)
-
-X = data.drop(['Heating Load Class', 'Cooling Load Class'], axis=1)
-y_heating = data['Heating Load Class']
-y_cooling = data['Cooling Load Class']
-
-X_train, X_test, y_heating_train, y_heating_test = train_test_split(X, y_heating, test_size=0.3, random_state=42)
-X_train, X_test, y_cooling_train, y_cooling_test = train_test_split(X, y_cooling, test_size=0.3, random_state=42)
-
-clf_heating = RandomForestClassifier()
-clf_heating.fit(X_train, y_heating_train)
-
-clf_cooling = RandomForestClassifier()
-clf_cooling.fit(X_train, y_cooling_train)
-
-y_heating_pred = clf_heating.predict(X_test)
-heating_cm = confusion_matrix(y_heating_test, y_heating_pred)
-
-y_cooling_pred = clf_cooling.predict(X_test)
-cooling_cm = confusion_matrix(y_cooling_test, y_cooling_pred)
-
-plot_feature_importance(clf_heating.feature_importances_, X.columns, title='Feature Importance for Heating Load')
-
-plot_feature_importance(clf_cooling.feature_importances_, X.columns, title='Feature Importance for Cooling Load')
-
-plot_confusion_matrix(heating_cm, labels, title='Heating Load Classification')
-plot_confusion_matrix(cooling_cm, labels, title='Cooling Load Classification')
-
-plt.show()
+print("\n\nPredictions for Cooling Load:\n")
+print(test_data[['Cooling Load Class', 'Cooling Load Prediction']])

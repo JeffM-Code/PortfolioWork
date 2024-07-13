@@ -1,42 +1,25 @@
-import pandas as pd
 from ucimlrepo import fetch_ucirepo
+import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
-import matplotlib.pyplot as plt
+from tabulate import tabulate
 
-def plot_feature_importance(importances, feature_names, title='Feature Importance'):
-    plt.figure(figsize=(10, 5))
-    feature_importance = pd.Series(importances, index=feature_names)
-    feature_importance.nlargest(10).plot(kind='barh', title=title)
-    plt.xlabel('Importance')
+train_file_path = 'ML\\BuildingEnergyEfficiency\\data\\train\\train.csv'
+test_file_path = 'ML\\BuildingEnergyEfficiency\\data\\test\\test.csv' 
 
-def plot_predictions_vs_actual(y_test, y_pred, title='Actual vs Predicted'):
-    plt.figure(figsize=(10, 5))
-    plt.scatter(y_test, y_pred, color='blue')
-    plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)
-    plt.xlabel('Actual')
-    plt.ylabel('Predicted')
-    plt.title(title)
+train_data = pd.read_csv(train_file_path)
+test_data = pd.read_csv(test_file_path)
 
-energy_efficiency = fetch_ucirepo(id=242)
-X = energy_efficiency.data.features
-y = energy_efficiency.data.targets
-
-feature_mapping = {
-    'X1': 'Relative Compactness',
-    'X2': 'Surface Area',
-    'X3': 'Wall Area',
-    'X4': 'Roof Area',
-    'X5': 'Overall Height',
-    'X6': 'Orientation',
-    'X7': 'Glazing Area',
-    'X8': 'Glazing Area Distribution'
-}
-
-X = X.rename(columns=feature_mapping)
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train = train_data.drop(['Y1', 'Y2'], axis=1)
+y_train = train_data[['Y1', 'Y2']]
+X_test = test_data.drop(['Y1', 'Y2'], axis=1)
+y_test = test_data[['Y1', 'Y2']]
 
 y_train_heating = y_train['Y1']
 y_test_heating = y_test['Y1']
@@ -57,15 +40,37 @@ y_pred_cooling = model_cooling.predict(X_test)
 mse_cooling = mean_squared_error(y_test_cooling, y_pred_cooling)
 r2_cooling = r2_score(y_test_cooling, y_pred_cooling)
 
+plt.figure(figsize=(10, 5))
+plt.scatter(y_test_heating, y_pred_heating, color='blue')
+plt.plot([y_test_heating.min(), y_test_heating.max()], [y_test_heating.min(), y_test_heating.max()], color='red', linewidth=2)
+plt.xlabel('Actual Heating Load')
+plt.ylabel('Predicted Heating Load')
+plt.title('Actual vs Predicted Heating Load')
+plt.show()
+
+plt.figure(figsize=(10, 5))
+plt.scatter(y_test_cooling, y_pred_cooling, color='blue')
+plt.plot([y_test_cooling.min(), y_test_cooling.max()], [y_test_cooling.min(), y_test_cooling.max()], color='red', linewidth=2)
+plt.xlabel('Actual Cooling Load')
+plt.ylabel('Predicted Cooling Load')
+plt.title('Actual vs Predicted Cooling Load')
+plt.show()
+
 print(f'Heating Load - Mean Squared Error: {mse_heating}, R2 Score: {r2_heating}')
 print(f'Cooling Load - Mean Squared Error: {mse_cooling}, R2 Score: {r2_cooling}')
 
-plot_feature_importance(model_heating.coef_, X.columns, title='Feature Importance for Heating Load')
+predictions1 = pd.DataFrame({
+    'Actual Heating Load': y_test_heating,
+    'Predicted Heating Load': y_pred_heating,
+})
 
-plot_feature_importance(model_cooling.coef_, X.columns, title='Feature Importance for Cooling Load')
+predictions2 = pd.DataFrame({
+    'Actual Cooling Load': y_test_cooling,
+    'Predicted Cooling Load': y_pred_cooling
+})
 
-plot_predictions_vs_actual(y_test_heating, y_pred_heating, title='Actual vs Predicted Heating Load')
+print("\n\nHeating Predictions:\n")
+print(predictions1)
 
-plot_predictions_vs_actual(y_test_cooling, y_pred_cooling, title='Actual vs Predicted Cooling Load')
-
-plt.show()
+print("\n\nCooling Predictions:\n")
+print(predictions2)
