@@ -10,13 +10,13 @@ Using data from an experiment done using a micro gas turbine, the idea's to pred
 
 Ideally more machinery or tooling can be more accurately simulated, to help inform decisions on their use, and drive business decisions. NVDIA seems to venture into simulation leveraging the power of machine learning as well (https://developer.nvidia.com/blog/develop-physics-informed-machine-learning-models-with-graph-neural-networks/), which personally I admire a lot and am trying to eventually get similar work done in the same area as well, starting with the applying ML to real-world systems and processes through my understanding of the field.<br><br>
 
-#### Input voltage vs time:<br><br>
+#### Input voltage:<br><br>
 <img src="reports/figures/input_voltage_time.png" alt="micro gas turbine" width="590"/><br><br>
 *Figure 2 - Input voltage vs time plot.*<br><br>
 
-#### Electrical power vs time:<br><br>
+#### Electrical power:<br><br>
 <img src="reports/figures/electrical_power_time.png" alt="micro gas turbine" width="590"/><br><br>
-*Figure 3 - Input voltage vs time plot.*<br><br>
+*Figure 3 - Electrical power vs time plot.*<br><br>
 
 The paper the data's based on asserts that the relationship between input voltage and electrical power is not one-to-one, but rather time-dependent and dynamic, meaning that the electrical power output is influenced by the input voltage, but it also exhibits temporal dynamics such as transitions and stationary phases, leading to the difference in geometric profiles.<br>
 By analyzing these plots, one may determine a correlation between the input voltage and electrical power, or whether the relationship is more complex and involves time-dependent dynamics. However, the models developed will focus more on the power consumed by the turbine to attempt to accurately emulate its behavior.<br><br>
@@ -30,14 +30,15 @@ By analyzing these plots, one may determine a correlation between the input volt
 * Error distribution is centered around zero, which is good, but should ideally be symmetrical around zero as well (is slightly left skewed)
 
 ### Regression
-#### Learning curve:
+#### Learning curve:<br><br>
 <img src="reports/figures/learning_curves.png" alt="learning curves" width="550"/><br><br>
 *Figure 4 - Learning curve plot.*<br><br>
 
-#### Error distribution:
+#### Error distribution:<br><br>
 <img src="reports/figures/error_distribution.png" alt="error distribution" width="550"/><br><br>
 *Figure 5 - Prediction error distribution.*<br><br>
 
+#### Scores:<br><br>
 ```
 Mean Squared Error: 236800.6401296233
 R^2 Score: 0.647773511404588
@@ -48,11 +49,11 @@ R^2 Score: 0.647773511404588
 ### Application
 Using the test sets:<br>
 
-#### Prediction on set 1:
+#### Prediction 1:<br><br>
 <img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="600"/><br><br>
 *Figure 6 - Predicted electrical power on test_1 dataset.*<br><br>
 
-#### Prediction on set 2:
+#### Prediction 2:<br><br>
 <img src="reports/figures/power_consumption_prediction_2.png" alt="power consumption prediction 2" width="600"/><br><br>
 *Figure 7 - Predicted electrical power on test_2 dataset.*<br><br>
 

@@ -29,7 +29,7 @@ For unlocking value from this data, certain strategic insights should be determi
 <br><br>
 
 #### LSTM
-##### Actual vs Prediction:
+##### Actual vs Prediction:<br><br>
 <img src="reports/figures/price_scatter.png" alt="price scatter" width="470" height="400"/><br><br>
 *Figure 2 - Actual vs predicted prices scatter plot.*<br><br>
 
@@ -100,7 +100,7 @@ R2 Score: 0.20173916151965587
 Each model had different evaluation performances, with the first (price) being reasonable, with worsening performance with each subsequent one (offer volume -> NIV), which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of varience than one with fewer, so that's likely the reason, but further analysis and model tuning will be necessary to see if this, or other factors are in effect here.<br><br>
 
 #### Practical:
-* Generally, inform trading strategies based on forecast<br><br><br>
+* Generally inform trading strategies based on forecast<br><br><br>
 
 ## Notebook
 https://colab.research.google.com/drive/1So3vq08OLjLI7fcQpDyyJb2-iNQ7bnpa#scrollTo=A4ADKW3urL7y<br><br>
