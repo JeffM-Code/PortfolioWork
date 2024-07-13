@@ -2,7 +2,12 @@
 Building energy efficiency<br><br>
 
 ## Info
-To address the problem of energy performance of buildings (EPB) due to growing concerns negative environmental impact of energy waste, one way to alleviate the ever increasing demand for additional energy supply for the robust implementation of energy-efficient building design. The computation of the heating load (HL) and the cooling load (CL) is required to determine the specifications of the heating and cooling equipment needed to maintain comfortable indoor air conditions, and in applying machine learning capabilities, this computational work can be done in a way that promotes data-driven insights into building design, and may produce value in increased building energy efficiency through reducing time and resources it may take to conduct necessary computations or simulations for determining better building efficiencies.<br><br>
+To address the problem of energy performance of buildings (EPB) due to growing concerns negative environmental impact of energy waste, one way to alleviate the ever increasing demand for additional energy supply for the robust implementation of energy-efficient building design.<br>
+
+The computation of the heating load (HL) and the cooling load (CL) is required to determine the specifications of the heating and cooling equipment needed to maintain comfortable indoor air conditions, and in applying machine learning capabilities, this computational work can be done in a way that promotes data-driven insights into building design, and may produce value in increased building energy efficiency through reducing time and resources it may take to conduct necessary computations or simulations for determining better building efficiencies.<br><br>
+
+#### Thermal computation illustration:<br><br>
+<img src="reports/figures/building_simulation_thermal_comfort.jpg" alt="building simulation thermal comfort" width="550"/><br><br>
 
 So, using building heating and cooling data, the idea's to predict the heating and cooling needs of a building, to gauge means of improving efficiency.<br><br>
 
@@ -66,7 +71,7 @@ Cooling Load Classification Accuracy: 96.75%
 <br><br>
 
 ### Regression
-#### Actual vs Prediction:
+#### Actual vs Prediction:<br><br>
 <img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="650" height="350"/><br><br>
 <img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="650" height="350"/><br><br>
 
@@ -76,6 +81,7 @@ Cooling Load Classification Accuracy: 96.75%
 Heating Load - Mean Squared Error: 9.15171647030883, R2 Score: 0.9121982116568189
 Cooling Load - Mean Squared Error: 9.896048105943512, R2 Score: 0.8931972456590836
 ```
+<br>
 
 ### Application
 Through the test set, we get the following results,<br>
@@ -129,6 +135,10 @@ Predictions for Cooling Load:
 https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h<br><br>
 
 ## References
+The 3 Biggest Trends in Building Simulation.<br>
+By SimScale<br>
+Link: https://www.simscale.com/blog/building-simulation/<br><br>
+
 Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br>
 By A. Tsanas, Angeliki Xifara. 2012
 
