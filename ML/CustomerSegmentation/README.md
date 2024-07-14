@@ -13,14 +13,14 @@ Metering data is used to achieve this segmentation, captred on different rooms o
 There are two ways to determine correlated values,
 
 #### 1. Pair plot:<br><br>
-<img src="reports/figures/pair_plot.png" alt="pair plot" width="590"/><br><br>
+<img src="reports/figures/pair_plot.png" alt="pair plot" width="800" height="680"/><br><br>
 *Figure 2 - Pair plot of variables.*<br><br>
 
 #### 2. Heatmap:<br><br>
 <img src="reports/figures/heatmap.png" alt="heatmap" width="590"/><br><br>
 *Figure 3 - Correlation heatmap of variables.*<br><br>
 
-We can see that certain varaibles are highly correlated, including global active power and intensity, but some aren't like voltage and global intensity.<br>
+We can see that certain varaibles are highly correlated, including global active power and intensity, but some aren't like voltage and global intensity.<br><br>
 This informs feature selection, and other means to optimize model performance.<br><br>
 
 #### Ideal K:<br><br>
@@ -64,7 +64,7 @@ With these segments, the utility company can more effectively make data-driven d
 * Customer segmentation for delivery of targeted interventions informing economical energy use (cost-cutting saving measures for *appropriate* consumers)<br><br><br>
 
 ## Notebook
-https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=cou8ybo_pmSs<br><br>
+https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=Emc0LJ5bFiUC<br><br>
 
 ## References
 Segmenting household electricity customers with quantitative and qualitative approaches.<br>
