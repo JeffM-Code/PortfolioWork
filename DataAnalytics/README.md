@@ -8,4 +8,4 @@
 * [Top item profitability](https://github.com/JeffM-Code/PortfolioWork/blob/main/DataAnalytics/project_reports/item_profitability.pdf)<br><br>
     * Assessment on highly profitable items to recommend most profitable item to stakeholder.<br><br><br>
 
-Data was queried from BigQuery on 400M+ row datasets.<br><br>
+Data was queried from BigQuery on 400M+ row datasets, with dashboards being made in PowerBI.
