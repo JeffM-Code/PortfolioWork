@@ -106,12 +106,12 @@ Each model had different evaluation performances, with the first (price) being r
 https://colab.research.google.com/drive/1So3vq08OLjLI7fcQpDyyJb2-iNQ7bnpa#scrollTo=A4ADKW3urL7y<br><br>
 
 ## References
-Imbalance pricing guidance.<br>
-by Elexon<br>
+Imbalance pricing guidance.<br><br>
+By Elexon<br><br>
 
 Link: https://www.elexon.co.uk/documents/training-guidance/bscguidance-notes/imbalance-pricing/#:~:text=After%20the%20end%20of%20the,be%20subject%20to%20imbalance%20charges<br><br>
 
-System sell and buy prices.<br>
-by Elexon<br>
+System sell and buy prices.<br><br>
+By Elexon<br><br>
 
 Link: https://bmrs.elexon.co.uk/system-prices<br><br>

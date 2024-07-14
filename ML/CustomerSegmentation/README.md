@@ -67,19 +67,19 @@ With these segments, the utility company can more effectively make data-driven d
 https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=Emc0LJ5bFiUC<br><br>
 
 ## References
-Segmenting household electricity customers with quantitative and qualitative approaches.<br>
-By F Barjak, et al.<br>
+Segmenting household electricity customers with quantitative and qualitative approaches.<br><br>
+By F Barjak, et al.<br><br>
 
 Link: https://www.sciencedirect.com/science/article/pii/S1364032121012776#:~:text=Five%20key%20customer%20segments%20are,and%205)%20stable%20and%20uninterested.<br><br>
 
-Holistic Privacy for Electricity, Water, and Natural Gas Metering in Next Generation Smart Homes.<br>
+Holistic Privacy for Electricity, Water, and Natural Gas Metering in Next Generation Smart Homes.<br><br>
 
-By Cihan Kement, et al.<br>
+By Cihan Kement, et al.<br><br>
 
 Link: https://www.researchgate.net/figure/Residential-smart-electricity-water-and-gas-metering_fig1_340952876<br><br>
 
-Household Electricity Consumption.<br>
+Household Electricity Consumption.<br><br>
 
-Dataset.<br>
+Dataset.<br><br>
 
 Link: https://www.kaggle.com/datasets/thedevastator/240000-household-electricity-consumption-records
