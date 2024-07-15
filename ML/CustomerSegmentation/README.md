@@ -38,7 +38,9 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 
 As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br><br>
 
-$J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2$
+\[ 
+J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2 
+\]
 
 <br><br>
 
@@ -62,7 +64,7 @@ Davies-Bouldin Index: 1.3580909841869342
 If we apply the clustering algorithm, we get the following clusters, ranging from 0 -> 2:<br><br>
 
 #### Clusters:<br><br>
-<img src="reports/figures/clustering.png" alt="clustering" width="600"/><br><br>
+<img src="reports/figures/clustering.png" alt="clustering" width="700"/><br><br>
 *Figure 6 - K-Means clustering of data.*<br><br>
 
 We have three clusters, each segmenting 3 different customer types:<br><br>
@@ -89,7 +91,7 @@ Segmenting household electricity customers with quantitative and qualitative app
 
 By F Barjak, et al.<br>
 
-Link: https://www.sciencedirect.com/science/article/pii/S1364032121012776#:~:text=Five%20key%20customer%20segments%20are,and%205)%20stable%20and%20uninterested.<br><br>
+Link: https://www.sciencedirect.com/science/article/pii/S1364032121012776#:~:text=Five%20key%20customer%20segments%20are,and%205%20stable%20and%20uninterested.<br><br>
 
 Holistic Privacy for Electricity, Water, and Natural Gas Metering in Next Generation Smart Homes.<br>
 
