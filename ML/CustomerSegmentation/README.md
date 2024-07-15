@@ -2,13 +2,13 @@
 Electricity Metering Customer Segmentation<br><br>
 
 ## Info
-Understanding the habits of energy consumers is essential in catering to their needs, and better anticipating their demand, to realise supply or generational efficincies. Segmenting these customers can provide valuable insights on their habbits, and this can be done through a k-means clustering algorithm.<br><br>
+Understanding the habits of energy consumers is essential in catering to their needs, and better anticipating their demand, to realize supply or generational efficiencies. Segmenting these customers can provide valuable insights on their habits, and this can be done through a k-means clustering algorithm.<br><br>
 
 #### Metering diagram:<br><br>
 <img src="reports/figures/metering_diagram.png" alt="metering diagram" width="590"/><br><br>
 *Figure 1 - Illustration of household metering data collection.*<br><br>
 
-Metering data is used to achieve this segmentation, captred on different rooms of a house using different appliances, as well as electric water heater and air conditioners.<br><br>
+Metering data is used to achieve this segmentation, captured on different rooms of a house using different appliances, as well as electric water heater and air conditioners.<br><br>
 
 There are two ways to determine correlated values,
 

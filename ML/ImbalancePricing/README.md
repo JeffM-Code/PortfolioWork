@@ -99,7 +99,7 @@ R2 Score: 0.20173916151965587
 <img src="reports/figures/niv_pred.png" alt="heating load prediction" width="650"/><br><br>
 *Figure 8 - Model NIV prediction on test_1 dataset.*<br><br>
 
-Each model had different evaluation performances, with the first (price) being reasonable, with worsening performance with each subsequent one (offer volume -> NIV), which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of varience than one with fewer, so that's likely the reason, but further analysis and model tuning will be necessary to see if this, or other factors are in effect here.<br><br>
+Each model had different evaluation performances, with the first (price) being reasonable, with differing performance with each subsequent one, which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of variance than one with fewer which is a likely reason, however further analysis and model tuning will be necessary to see if this, or other factors are at play here.<br><br>
 
 #### Practical:
 * Generally inform trading strategies based on forecast<br><br><br>
