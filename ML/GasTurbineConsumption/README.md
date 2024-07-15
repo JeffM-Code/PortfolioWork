@@ -2,7 +2,7 @@
 Micro Gas Turbine Energy Consumption<br><br>
 
 ## Info
-Using data from an experiment done using a micro gas turbine, the idea's to predict its energy usage. This model can then help inform decisions on the tooling itself, as its performance can be emulated virtually via a predictive ML model, so it can be tested on a different environment and the results of that test can be treated as being reasonably accurate, depending on model performance on emulating its true behavior.<br>
+Using data from an experiment done using a micro gas turbine, the idea's to predict its energy usage. This model can then help inform decisions on the tooling itself, as its performance can be emulated virtually via a predictive ML model, so it can be tested on a different environment and the results of that test can be treated as being reasonably accurate, depending on model performance on emulating its behavior in reality.<br><br>
 
 #### Micro gas turbine:<br><br>
 <img src="reports/figures/micro_gas_turbine.jpg" alt="micro gas turbine" width="590"/><br><br>
@@ -30,17 +30,19 @@ By analyzing these plots, one may determine a correlation between the input volt
 Linear regression implements a means to perform ordinary least squares regression. In Ordinary Least Squares Linear Regression, the goal is to find the line that will minimize the vertical offsets (lines between points and best fit curve),  define the best-fitting line as the line that minimizes the sum of squared errors or mean squared error between our target variable $y$ and our predicted output over all samples in our dataset of size $n$.<br><br>
 
 Sum of Squared Errors:<br>
-$$SSE = \sum_i (target^{(i)} - output^{(i)})^2$$
+$$SSE = \sum_{i=1}^{n} (y_i - \hat{y_i})^2 = \sum_i (target^{(i)} - output^{(i)})^2$$
 <br>
 
 Mean Squared Error:<br>
 $$MSE = \frac{1}{n} \times SSE$$
 <br><br>
 
+Where $y$ is the explanatory variable or the value we're trying to predict, and $\hat{y}$ is the predicted value.<br><br>
+
 ### Performance
 * The learning curves show that a steady validation error but an erratic training error, indicating sub-optimized model
     * Will need to implement model optimization techniques to ensure consistent and low error
-* Error distribution is centered around zero, which is good, but should ideally be symmetrical around zero as well (is slightly left skewed)
+* Error distribution is centered around zero, which is good, but should ideally be symmetrical around zero as well (is slightly left skewed)<br><br>
 
 ### Regression
 #### Learning curve:<br><br>

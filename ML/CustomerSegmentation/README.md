@@ -24,7 +24,7 @@ We can see that certain varaibles are highly correlated, including global active
 This informs feature selection, and other means to optimize model performance.<br><br>
 
 #### Ideal K:<br><br>
-<img src="reports/figures/elbow.png" alt="elbow" width="590"/><br><br>
+<img src="reports/figures/elbow.png" alt="elbow" width="540"/><br><br>
 *Figure 4 - Elbow plot.*<br><br>
 
 K-means clustering requires a n_clusters hyperparameter, which can be determined by creating an elbow plot of inertia (sum of squared distances between each point and the centroid of its assigned cluster) against the number of clusters k. As you increase the number of clusters k, the inertia decreases significantly because adding more clusters allows the model to better fit the data. However, after a certain point, the rate of decrease in inertia slows down significantly. The point where the rate starts to decrease more slowly (marked in blue) indicates that adding more clusters doesn't significantly improve the model's performance. This point is considered the 'elbow' and represents the ideal $k$.<br><br>
@@ -33,7 +33,7 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 ### Models
 * K-means clustering<br><br>
 
-<img src="reports/figures/kmeans.png" alt="kmeans" width="720"/><br><br>
+<img src="reports/figures/kmeans.png" alt="kmeans" width="760"/><br><br>
 *Figure 5 - Illustration of K-means clustering algorithm.*<br><br>
 
 As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br>
