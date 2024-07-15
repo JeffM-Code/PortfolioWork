@@ -1,5 +1,5 @@
 ## Project
-Building energy efficiency<br><br>
+Building Energy Efficiency<br><br>
 
 ## Info
 To address the problem of energy performance of buildings (EPB) due to growing concerns negative environmental impact of energy waste, one way to alleviate the ever increasing demand for additional energy supply for the robust implementation of energy-efficient building design.<br>

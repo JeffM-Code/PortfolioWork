@@ -1,5 +1,5 @@
 ## Project
-Electricity metering customer segmentation<br><br>
+Electricity Metering Customer Segmentation<br><br>
 
 ## Info
 Understanding the habits of energy consumers is essential in catering to their needs, and better anticipating their demand, to realise supply or generational efficincies. Segmenting these customers can provide valuable insights on their habbits, and this can be done through a k-means clustering algorithm.<br><br>
