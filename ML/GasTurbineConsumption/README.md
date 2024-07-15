@@ -31,7 +31,7 @@ Linear regression implements a means to perform ordinary least squares regressio
 
 Sum of Squared Errors:<br>
 $$SSE = \sum_i (target^{(i)} - output^{(i)})^2$$
-<br><br>
+<br>
 
 Mean Squared Error:<br>
 $$MSE = \frac{1}{n} \times SSE$$

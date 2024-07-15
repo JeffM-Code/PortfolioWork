@@ -38,10 +38,8 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 
 As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br><br>
 
-
 $$J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2$$
-
-<br><br>
+<br>
 
 Where $x$ is a point, $v$ is a centroid, $k$ representing some number of centroids (clusters), and $n$ some number of points in each cluster.
 
