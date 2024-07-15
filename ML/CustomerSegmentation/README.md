@@ -33,6 +33,19 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 ### Models
 * K-means clustering<br><br>
 
+<img src="reports/figures/kmeans.png" alt="elbow" width="590"/><br><br>
+*Figure 5 - Illustration of K-means clustering algorithm.*<br><br>
+
+As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br><br>
+
+\[ 
+J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2 
+\]
+<br><br>
+
+Where $x$ is a point, $v$ is a centroid, $k$ representing some number of centroids (clusters), and $n$ some number of points in each cluster.
+
+<br><br>
 ### Performance
 * Silohete score (this model'smodel: 0.337) that's closer to one like one above 0.5 is good, however this model performed below that, indicating poor cluster seperation quality<br><br>
 * Davies-Bouldin index (this model's: 1.358) should ideally be low, which seems to be the case for this model, suggesting that the clusters have a moderate level of similarity to their nearest clusters.<br><br>
@@ -51,7 +64,7 @@ If we apply the clustering algorithm, we get the following clusters, ranging fro
 
 #### Clusters:<br><br>
 <img src="reports/figures/clustering.png" alt="clustering" width="600"/><br><br>
-*Figure 5 - K-Means clustering of data.*<br><br>
+*Figure 6 - K-Means clustering of data.*<br><br>
 
 We have three clusters, each segmenting 3 different customer types:<br><br>
 * Purple - Low consumption households, likely less popullated homes with few people or power consuming appliances <br><br>
@@ -67,6 +80,12 @@ With these segments, the utility company can more effectively make data-driven d
 https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=Emc0LJ5bFiUC<br><br>
 
 ## References
+k-Means Clustering.<br><br>
+
+Brilliant<br><br>
+
+Link: https://brilliant.org/wiki/k-means-clustering/<br><br>
+
 Segmenting household electricity customers with quantitative and qualitative approaches.<br><br>
 By F Barjak, et al.<br><br>
 
@@ -80,6 +99,6 @@ Link: https://www.researchgate.net/figure/Residential-smart-electricity-water-an
 
 Household Electricity Consumption.<br><br>
 
-Dataset.<br><br>
+Kaggle<br><br>
 
 Link: https://www.kaggle.com/datasets/thedevastator/240000-household-electricity-consumption-records

@@ -22,25 +22,27 @@ Highly correlated value are closest to 1, and are more red, and less correlated 
 <img src="reports/figures/boxplots.png" alt="boxplots" width="550"/><br><br>
 *Figure 3 - Boxplot of dateset variables.*<br><br>
 
-Variables such as overall height, orientation, glazing area and so on are very tightly compact and have small ranges, indicating low variance in their data, whereas surface area, wall area, and roof area have higher values and larger ranges, indicating a higher variance in the dataset. Linear regression models are sensitive to variance, so this plot helps to inform decisions in feature selection.<br><br>
+Variables such as overall height, orientation, glazing area and so on are very tightly compact and have small ranges, indicating low variance in their data, whereas surface area, wall area, and roof area have higher values and larger ranges, indicating a higher variance in the dataset.<br><br>
 
 ### Models
-* Classification
-* Regression<br><br>
+* Classification<br><br>
+
+<img src="reports/figures/random_tree.png" alt="heat load confusion matrix" width="600"/><br><br>
+*Figure 4 - Random forest classifier illustration.*<br><br>
+
+A Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. It collects votes from different decision trees to decide the final prediction.<br><br>
 
 ### Performance
-* Both algorithms perform well, given the confusion matrices and graphs showing good accuracy in prediction
-    * The confusion matrix (classification) shows that it correctly classifies each label most of the time, with a few outliers
-    * It also shows good predictive capabilities with the actual vs predicted graphs (regression), as most points are close to $x=y$ curve that shows the ideal scenario
+* The confusion matrix shows that it correctly classifies each label most of the time, with a few outliers
 <br><br>
 
 ### Classification
 #### Confusion matrices:<br><br>
 <img src="reports/figures/heat_load_confusion_matrix.png" alt="heat load confusion matrix" width="600"/><br><br>
-*Figure 4 - Heating load classification confusion matrix.*<br><br>
+*Figure 5 - Heating load classification confusion matrix.*<br><br>
 
 <img src="reports/figures/cooling_load_confusion_matrix.png" alt="cooling load confusion matrix" width="600"/><br><br>
-*Figure 5 - Cooling load classification confusion matrix.*<br><br>
+*Figure 6 - Cooling load classification confusion matrix.*<br><br>
 
 
 #### Scores:<br><br>
@@ -75,23 +77,8 @@ Cooling Load Classification Accuracy: 96.75%
 ```
 <br><br>
 
-### Regression
-#### Actual vs Prediction:<br><br>
-<img src="reports/figures/heating_load_prediction.png" alt="heating load prediction" width="650" height="350"/><br><br>
-*Figure 6 - Actual vs predicted heating load plot.*<br><br>
-
-<img src="reports/figures/cooling_load_prediction.png" alt="cooling load prediction" width="650" height="350"/><br><br>
-*Figure 7 - Actual vs predicted cooling load plot.*<br><br>
-
-#### Evaluation metrics:<br><br>
-```
-Heating Load - Mean Squared Error: 9.15171647030883, R2 Score: 0.9121982116568189
-Cooling Load - Mean Squared Error: 9.896048105943512, R2 Score: 0.8931972456590836
-```
-<br>
-
 ### Application
-Through the test set, we get the following results,<br>
+Through the test set, we get the following results,<br><br>
 
 #### Actual vs Prediction:<br><br>
 ```
@@ -133,6 +120,8 @@ Predictions for Cooling Load:
 ```
 <br>
 
+From a sample of the predicted classes, we can demonstrate the predictive accuracy which seems to reflect the computed accuracy of the model.<br><br>
+
 #### Practical:
 * (Efficient) Assessment of heating and cooling needs of building designs
 * Plan renovations and improvements for existing buildings to move them to a lower energy load category
@@ -142,13 +131,20 @@ Predictions for Cooling Load:
 https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h<br><br>
 
 ## References
+Random Forest Classifier using Scikit-learn.<br><br>
+
+Geeks for geeks.<br><br>
+
+Link: https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/<br><br>
+
 The 3 Biggest Trends in Building Simulation.<br><br>
 By SimScale<br><br>
 Link: https://www.simscale.com/blog/building-simulation/<br><br>
 
-Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br>
-By A. Tsanas, Angeliki Xifara. 2012
+Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br><br>
 
-Published in Energy and Buildings, vol. 49<br>
+By A. Tsanas, Angeliki Xifara. 2012<br>
+
+Published in Energy and Buildings, vol. 49<br><br>
 
 Link: https://archive.ics.uci.edu/dataset/242/energy+efficiency

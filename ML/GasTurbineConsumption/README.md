@@ -24,6 +24,23 @@ By analyzing these plots, one may determine a correlation between the input volt
 ### Models
 * Regression<br><br>
 
+<img src="reports/figures/regression.png" alt="learning curves" width="550"/><br><br>
+*Figure 4 - Illustration of linear regression.*<br><br>
+
+Linear regression implements a means to perform ordinary least squares regression. In Ordinary Least Squares Linear Regression, the goal is to find the line that will minimize the vertical offsets (lines between points and best fit curve),  define the best-fitting line as the line that minimizes the sum of squared errors or mean squared error between our target variable $y$ and our predicted output over all samples in our dataset of size $n$.<br><br>
+
+Sum of Squared Errors:<br>
+$$
+SSE = \sum_i (target^{(i)} - output^{(i)})^2
+$$
+<br>
+
+Mean Squared Error:<br>
+$$
+MSE = \frac{1}{n} \times SSE
+$$
+<br><br>
+
 ### Performance
 * The learning curves show that a steady validation error but an erratic training error, indicating sub-optimized model
     * Will need to implement model optimization techniques to ensure consistent and low error
@@ -32,11 +49,11 @@ By analyzing these plots, one may determine a correlation between the input volt
 ### Regression
 #### Learning curve:<br><br>
 <img src="reports/figures/learning_curves.png" alt="learning curves" width="550"/><br><br>
-*Figure 4 - Learning curve plot.*<br><br>
+*Figure 5 - Learning curve plot.*<br><br>
 
 #### Error distribution:<br><br>
 <img src="reports/figures/error_distribution.png" alt="error distribution" width="550"/><br><br>
-*Figure 5 - Prediction error distribution.*<br><br>
+*Figure 6 - Prediction error distribution.*<br><br>
 
 #### Scores:<br><br>
 ```
@@ -51,11 +68,11 @@ Using the test sets:<br>
 
 #### Prediction 1:<br><br>
 <img src="reports/figures/power_consumption_prediction_1.png" alt="power consumption prediction 1" width="600"/><br><br>
-*Figure 6 - Predicted electrical power on test_1 dataset.*<br><br>
+*Figure 7 - Predicted electrical power on test_1 dataset.*<br><br>
 
 #### Prediction 2:<br><br>
 <img src="reports/figures/power_consumption_prediction_2.png" alt="power consumption prediction 2" width="600"/><br><br>
-*Figure 7 - Predicted electrical power on test_2 dataset.*<br><br>
+*Figure 8 - Predicted electrical power on test_2 dataset.*<br><br>
 
 It does well for both test sets, as predicted consumption curve is close to measured curve using for both.<br><br>
 
@@ -67,13 +84,19 @@ It does well for both test sets, as predicted consumption curve is close to meas
 https://colab.research.google.com/drive/1wD2YNJqh0A_YSL2IvcBuuTxrqtdLeyrE#scrollTo=y0Sa7Ikcbe0F<br><br>
 
 ## References
-Capstone Microturbines.<br>
+LinearRegression: An implementation of ordinary least-squares linear regression.<br><br>
+
+Mlxtend<br><br>
+
+Link: https://rasbt.github.io/mlxtend/user_guide/regressor/LinearRegression/<br><br>
+
+Capstone Microturbines.<br><br>
 
 Link: https://www.linkedin.com/pulse/what-capstone-microturbines-rafael-sanchez/<br><br>
 
-Knowledge-Guided Learning of Temporal Dynamics and its Application to Gas Turbines.<br>
+Knowledge-Guided Learning of Temporal Dynamics and its Application to Gas Turbines.<br><br>
 By Pawel Bielski, Aleksandr Eismont, Jakob Bach, Florian Leiser, Dustin Kottonau, and Klemens Böhm. 2024
 
-Published in 15th ACM International Conference on Future Energy Systems (e-Energy '24), Singapore<br>
+Published in 15th ACM International Conference on Future Energy Systems (e-Energy '24), Singapore<br><br>
 
 Link: https://archive.ics.uci.edu/dataset/994/micro+gas+turbine+electrical+energy+prediction

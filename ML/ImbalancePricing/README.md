@@ -16,10 +16,12 @@ For unlocking value from this data, certain strategic insights should be determi
 
 
 ### Models
-* Long Short-term Memory (LSTM):
-    * System Price
-    * Volume
-    * Net Imbalance Volume (NIV)<br><br>
+* Long Short-term Memory (LSTM)<br><br>
+
+<img src="reports/figures/LSTM.png" alt="price scatter" width="590"/><br><br>
+*Figure 2 - LSTM model architecture.*<br><br>
+
+It is a type of recurrent neural network (RNN) where the output from the previous step is fed as input to the current step, and as shown in *Figure 2*, input $x$ is passed to the hidden layer $h$, which has a loop for memory storage, passing information to the output $y$. The hidden layers act as short-term memory, carrying information to the next set of layers.<br><br>
 
 ### Performance
 #### System Buying / Selling Price
@@ -31,7 +33,7 @@ For unlocking value from this data, certain strategic insights should be determi
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/price_scatter.png" alt="price scatter" width="470" height="400"/><br><br>
-*Figure 2 - Actual vs predicted prices scatter plot.*<br><br>
+*Figure 3 - Actual vs predicted prices scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -52,7 +54,7 @@ R2 Score: 0.22286856315930337
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/accepted_offer_volume_scatter.png" alt="accepted offer volume scatter" width="470" height="400"/><br><br>
-*Figure 3 - Actual vs predicted total accepted volume scatter plot.*<br><br>
+*Figure 4 - Actual vs predicted total accepted volume scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -72,7 +74,7 @@ R2 Score: 0.7708270743038639
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470" height="400"/><br><br>
-*Figure 4 - Actual vs predicted NIV scatter plot.*<br><br>
+*Figure 5 - Actual vs predicted NIV scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -87,15 +89,15 @@ R2 Score: 0.20173916151965587
 ### Application
 ##### System buy / sell price model:<br><br>
 <img src="reports/figures/price_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 5 - Model system buy & sell price prediction on test_1 dataset.*<br><br>
+*Figure 6 - Model system buy & sell price prediction on test_1 dataset.*<br><br>
 
 ##### Accepted offer volume:<br><br>
 <img src="reports/figures/accepted_offer_volume_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 6 - Model total accepted offer volume prediction on test_1 dataset.*<br><br>
+*Figure 7 - Model total accepted offer volume prediction on test_1 dataset.*<br><br>
 
 ##### Net imbalance volume:<br><br>
 <img src="reports/figures/niv_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 7 - Model NIV prediction on test_1 dataset.*<br><br>
+*Figure 8 - Model NIV prediction on test_1 dataset.*<br><br>
 
 Each model had different evaluation performances, with the first (price) being reasonable, with worsening performance with each subsequent one (offer volume -> NIV), which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of varience than one with fewer, so that's likely the reason, but further analysis and model tuning will be necessary to see if this, or other factors are in effect here.<br><br>
 
@@ -107,11 +109,19 @@ https://colab.research.google.com/drive/1So3vq08OLjLI7fcQpDyyJb2-iNQ7bnpa#scroll
 
 ## References
 Imbalance pricing guidance.<br><br>
-By Elexon<br><br>
+
+Elexon<br><br>
 
 Link: https://www.elexon.co.uk/documents/training-guidance/bscguidance-notes/imbalance-pricing/#:~:text=After%20the%20end%20of%20the,be%20subject%20to%20imbalance%20charges<br><br>
 
+Long short-term memory (LSTM) RNN in Tensorflow.<br><br>
+
+Geeks for geeks<br><br>
+
+Link: https://www.geeksforgeeks.org/long-short-term-memory-lstm-rnn-in-tensorflow/<br><br>
+
 System sell and buy prices.<br><br>
-By Elexon<br><br>
+
+Elexon<br><br>
 
 Link: https://bmrs.elexon.co.uk/system-prices<br><br>
