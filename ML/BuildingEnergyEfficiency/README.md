@@ -120,7 +120,7 @@ Predictions for Cooling Load:
 ```
 <br>
 
-From a sample of the predicted classes, we can demonstrate the predictive accuracy which seems to reflect the computed accuracy of the model.<br><br>
+From a sample of the predicted classes, we can demonstrate the predictive accuracy which seems to reflect the high computed accuracy of the model.<br><br>
 
 #### Practical:
 * (Efficient) Assessment of heating and cooling needs of building designs
@@ -131,20 +131,22 @@ From a sample of the predicted classes, we can demonstrate the predictive accura
 https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h<br><br>
 
 ## References
-Random Forest Classifier using Scikit-learn.<br><br>
+Random Forest Classifier using Scikit-learn.<br>
 
-Geeks for geeks.<br><br>
+Geeks for geeks.<br>
 
 Link: https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/<br><br>
 
-The 3 Biggest Trends in Building Simulation.<br><br>
-By SimScale<br><br>
+The 3 Biggest Trends in Building Simulation.<br>
+
+By SimScale<br>
+
 Link: https://www.simscale.com/blog/building-simulation/<br><br>
 
-Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br><br>
+Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools.<br>
 
 By A. Tsanas, Angeliki Xifara. 2012<br>
 
-Published in Energy and Buildings, vol. 49<br><br>
+Published in Energy and Buildings, vol. 49<br>
 
 Link: https://archive.ics.uci.edu/dataset/242/energy+efficiency

@@ -38,9 +38,8 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 
 As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br><br>
 
-\[ 
-J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2 
-\]
+$J = \sum_{i=1}^{k} \sum_{j=1}^{n} \left( \| x_i - v_j \| \right)^2$
+
 <br><br>
 
 Where $x$ is a point, $v$ is a centroid, $k$ representing some number of centroids (clusters), and $n$ some number of points in each cluster.
@@ -80,25 +79,26 @@ With these segments, the utility company can more effectively make data-driven d
 https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=Emc0LJ5bFiUC<br><br>
 
 ## References
-k-Means Clustering.<br><br>
+k-Means Clustering.<br>
 
-Brilliant<br><br>
+Brilliant<br>
 
 Link: https://brilliant.org/wiki/k-means-clustering/<br><br>
 
-Segmenting household electricity customers with quantitative and qualitative approaches.<br><br>
-By F Barjak, et al.<br><br>
+Segmenting household electricity customers with quantitative and qualitative approaches.<br>
+
+By F Barjak, et al.<br>
 
 Link: https://www.sciencedirect.com/science/article/pii/S1364032121012776#:~:text=Five%20key%20customer%20segments%20are,and%205)%20stable%20and%20uninterested.<br><br>
 
-Holistic Privacy for Electricity, Water, and Natural Gas Metering in Next Generation Smart Homes.<br><br>
+Holistic Privacy for Electricity, Water, and Natural Gas Metering in Next Generation Smart Homes.<br>
 
-By Cihan Kement, et al.<br><br>
+By Cihan Kement, et al.<br>
 
 Link: https://www.researchgate.net/figure/Residential-smart-electricity-water-and-gas-metering_fig1_340952876<br><br>
 
-Household Electricity Consumption.<br><br>
+Household Electricity Consumption.<br>
 
-Kaggle<br><br>
+Kaggle<br>
 
 Link: https://www.kaggle.com/datasets/thedevastator/240000-household-electricity-consumption-records

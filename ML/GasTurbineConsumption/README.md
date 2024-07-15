@@ -30,15 +30,11 @@ By analyzing these plots, one may determine a correlation between the input volt
 Linear regression implements a means to perform ordinary least squares regression. In Ordinary Least Squares Linear Regression, the goal is to find the line that will minimize the vertical offsets (lines between points and best fit curve),  define the best-fitting line as the line that minimizes the sum of squared errors or mean squared error between our target variable $y$ and our predicted output over all samples in our dataset of size $n$.<br><br>
 
 Sum of Squared Errors:<br>
-$$
-SSE = \sum_i (target^{(i)} - output^{(i)})^2
-$$
-<br>
+$SSE = \sum_i (target^{(i)} - output^{(i)})^2$
+<br><br>
 
 Mean Squared Error:<br>
-$$
-MSE = \frac{1}{n} \times SSE
-$$
+$MSE = \frac{1}{n} \times SSE$
 <br><br>
 
 ### Performance
@@ -84,19 +80,19 @@ It does well for both test sets, as predicted consumption curve is close to meas
 https://colab.research.google.com/drive/1wD2YNJqh0A_YSL2IvcBuuTxrqtdLeyrE#scrollTo=y0Sa7Ikcbe0F<br><br>
 
 ## References
-LinearRegression: An implementation of ordinary least-squares linear regression.<br><br>
+LinearRegression: An implementation of ordinary least-squares linear regression.<br>
 
-Mlxtend<br><br>
+Mlxtend<br>
 
 Link: https://rasbt.github.io/mlxtend/user_guide/regressor/LinearRegression/<br><br>
 
-Capstone Microturbines.<br><br>
+Capstone Microturbines.<br>
 
 Link: https://www.linkedin.com/pulse/what-capstone-microturbines-rafael-sanchez/<br><br>
 
-Knowledge-Guided Learning of Temporal Dynamics and its Application to Gas Turbines.<br><br>
-By Pawel Bielski, Aleksandr Eismont, Jakob Bach, Florian Leiser, Dustin Kottonau, and Klemens Böhm. 2024
+Knowledge-Guided Learning of Temporal Dynamics and its Application to Gas Turbines.<br>
+By Pawel Bielski, Aleksandr Eismont, Jakob Bach, Florian Leiser, Dustin Kottonau, and Klemens Böhm. 2024<br>
 
-Published in 15th ACM International Conference on Future Energy Systems (e-Energy '24), Singapore<br><br>
+Published in 15th ACM International Conference on Future Energy Systems (e-Energy '24), Singapore<br>
 
 Link: https://archive.ics.uci.edu/dataset/994/micro+gas+turbine+electrical+energy+prediction
