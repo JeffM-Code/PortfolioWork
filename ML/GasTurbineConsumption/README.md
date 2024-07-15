@@ -27,7 +27,7 @@ By analyzing these plots, one may determine a correlation between the input volt
 <img src="reports/figures/regression.png" alt="regression" width="550"/><br><br>
 *Figure 4 - Illustration of linear regression.*<br><br>
 
-Linear regression implements a means to perform ordinary least squares regression. In Ordinary Least Squares Linear Regression, the goal is to find the line that will minimize the vertical offsets (lines between points and best fit curve),  define the best-fitting line as the line that minimizes the sum of squared errors or mean squared error between our target variable $y$ and our predicted output over all samples in our dataset of size $n$.<br><br>
+Linear regression implements a means to perform ordinary least squares regression. In Ordinary Least Squares Linear Regression, the goal is to find the line that will minimize the vertical offsets (lines between points and best fit curve),  define the best-fitting line as the line that minimizes the sum of squared errors or mean squared error between our target variable $y$ and our predicted output over all samples in our dataset of size $n$.<br>
 
 Sum of Squared Errors:<br>
 $$SSE = \sum_{i=1}^{n} (y_i - \hat{y_i})^2 = \sum_i (target^{(i)} - output^{(i)})^2$$
