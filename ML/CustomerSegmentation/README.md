@@ -33,7 +33,7 @@ K-means clustering requires a n_clusters hyperparameter, which can be determined
 ### Models
 * K-means clustering<br><br>
 
-<img src="reports/figures/kmeans.png" alt="elbow" width="590"/><br><br>
+<img src="reports/figures/kmeans.png" alt="kmeans" width="690"/><br><br>
 *Figure 5 - Illustration of K-means clustering algorithm.*<br><br>
 
 As eluded to in *Figure 5*, the model algorithmically clusters the data in steps, and mathematically this is done through minimizing an objective function $J$, which here being the squared error function:<br><br>

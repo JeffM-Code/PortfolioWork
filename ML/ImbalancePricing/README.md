@@ -18,7 +18,7 @@ For unlocking value from this data, certain strategic insights should be determi
 ### Models
 * Long Short-term Memory (LSTM)<br><br>
 
-<img src="reports/figures/LSTM.png" alt="price scatter" width="690"/><br><br>
+<img src="reports/figures/LSTM.png" alt="LSTM" width="690"/><br><br>
 *Figure 2 - LSTM model architecture.*<br><br>
 
 It is a type of recurrent neural network (RNN) where the output from the previous step is fed as input to the current step, and as shown in *Figure 2*, input $x$ is passed to the hidden layer $h$, which has a loop for memory storage, passing information to the output $y$. The hidden layers act as short-term memory, carrying information to the next set of layers.<br><br>
