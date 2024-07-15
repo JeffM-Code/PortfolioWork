@@ -27,7 +27,7 @@ Variables such as overall height, orientation, glazing area and so on are very t
 ### Models
 * Classification<br><br>
 
-<img src="reports/figures/random_tree.png" alt="heat load confusion matrix" width="600"/><br><br>
+<img src="reports/figures/random_tree.png" alt="heat load confusion matrix" width="690"/><br><br>
 *Figure 4 - Random forest classifier illustration.*<br><br>
 
 A Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. It collects votes from different decision trees to decide the final prediction.<br><br>
