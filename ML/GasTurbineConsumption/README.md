@@ -35,7 +35,7 @@ $$SSE = \sum_{i=1}^{n} (y_i - \hat{y_i})^2 = \sum_i (target^{(i)} - output^{(i)}
 
 Mean Squared Error:<br>
 $$MSE = \frac{1}{n} \times SSE$$
-<br><br>
+<br>
 
 Where $y$ is the explanatory variable or the value we're trying to predict, and $\hat{y}$ is the predicted value.<br><br>
 
