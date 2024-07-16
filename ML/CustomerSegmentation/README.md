@@ -45,13 +45,13 @@ Where $x$ is a point, $v$ is a centroid, $k$ representing some number of centroi
 
 <br><br>
 ### Performance
-* Silohete score (this model'smodel: 0.337) that's closer to one like one above 0.5 is good, however this model performed below that, indicating poor cluster seperation quality<br><br>
-* Davies-Bouldin index (this model's: 1.358) should ideally be low, which seems to be the case for this model, suggesting that the clusters have a moderate level of similarity to their nearest clusters.<br><br>
+* Silohete score (this model'smodel: 0.408) that's closer to one like one above 0.5 is good, however this model performed below that, indicating poor cluster seperation quality<br><br>
+* Davies-Bouldin index (this model's: 1.227) should ideally be low, which seems to be the case for this model, suggesting that the clusters have a moderate level of similarity to their nearest clusters.<br><br>
 
 #### Performance metrics:<br><br>
 ```
-Silhouette Score: 0.33731589863782335
-Davies-Bouldin Index: 1.3580909841869342
+Silhouette Score: 0.4081917719642258
+Davies-Bouldin Index: 1.2269878058749135
 
 ```
 <br><br>
