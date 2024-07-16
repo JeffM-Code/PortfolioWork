@@ -75,7 +75,7 @@ With these segments, the utility company can more effectively make data-driven d
 * Customer segmentation for delivery of targeted interventions informing economical energy use (cost-cutting saving measures for *appropriate* consumers)<br><br><br>
 
 ## Notebooks
-[Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/CustomerSegmentation/ML_customer_segmentation.ipynb)<br>
+[Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/CustomerSegmentation/ML_customer_segmentation.ipynb)<br><br>
 [Interactive](https://colab.research.google.com/drive/1l4FFhhdfhxbs78oyYCS3Yn6kR-K6ca1y#scrollTo=Emc0LJ5bFiUC)<br><br>
 
 ## References

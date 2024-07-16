@@ -79,7 +79,7 @@ It does well for both test sets, as predicted consumption curve is close to meas
 * Predict power requirements to manage battery charge and discharge cycles effectively, to help extend battery life and ensure reliable power supply in applications like electric vehicles and renewable energy storage<br><br><br>
 
 ## Notebook
-[Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/GasTurbineConsumption/ML_gas_turbine_consumption.ipynb)
+[Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/GasTurbineConsumption/ML_gas_turbine_consumption.ipynb)<br><br>
 [Interactive](https://colab.research.google.com/drive/1wD2YNJqh0A_YSL2IvcBuuTxrqtdLeyrE#scrollTo=y0Sa7Ikcbe0F)<br><br>
 
 ## References
