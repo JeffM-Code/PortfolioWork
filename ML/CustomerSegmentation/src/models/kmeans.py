@@ -2,8 +2,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score, davies_bouldin_score
+from sklearn.decomposition import PCA
 
 file_path = 'ML\\CustomerSegmentation\\data\\train\\train.csv'
 
@@ -25,27 +28,25 @@ scaler = StandardScaler()
 scaled_data = scaler.fit_transform(data.drop(columns=['Datetime']))
 scaled_data = pd.DataFrame(scaled_data, columns=data.columns[:-1])
 
-sns.pairplot(scaled_data)
-plt.suptitle("Pair Plot", y=1.02)
+k = 3
+kmeans = KMeans(n_clusters=k, random_state=42)
+data['Cluster'] = kmeans.fit_predict(scaled_data)
+
+silhouette_avg = silhouette_score(scaled_data, data['Cluster'])
+print(f'Silhouette Score: {silhouette_avg}')
+db_index = davies_bouldin_score(scaled_data, data['Cluster'])
+print(f'Davies-Bouldin Index: {db_index}')
+
+pca = PCA(n_components=2)
+pca_data = pca.fit_transform(scaled_data)
+
+plt.figure(figsize=(10, 6))
+plt.scatter(pca_data[:, 0], pca_data[:, 1], c=data['Cluster'], cmap='viridis', marker='.')
+plt.title('K-means Clustering Results')
+plt.xlabel('PCA Component 1')
+plt.ylabel('PCA Component 2')
+plt.colorbar(label='Cluster')
 plt.show()
 
-plt.figure(figsize=(10, 8))
-sns.heatmap(scaled_data.corr(), annot=True, cmap='coolwarm', fmt='.2f')
-plt.title("Correlation Heatmap")
-plt.show()
-
-inertia = []
-K_range = range(1, 11)
-for k in K_range:
-    kmeans = KMeans(n_clusters=k, random_state=42)
-    kmeans.fit(scaled_data)
-    inertia.append(kmeans.inertia_)
-
-plt.figure(figsize=(8, 6))
-plt.plot(K_range, inertia, marker='o')
-plt.title('Elbow Method for Optimal K')
-plt.xlabel('Number of Clusters')
-plt.ylabel('Inertia')
-plt.xticks(K_range)
-plt.grid(True)
-plt.show()
+clustered_file_path = 'clustered_data.csv'
+data.to_csv(clustered_file_path, index=False)

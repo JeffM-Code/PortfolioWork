@@ -65,9 +65,9 @@ If we apply the clustering algorithm, we get the following clusters, ranging fro
 *Figure 6 - K-Means clustering of data.*<br><br>
 
 We have three clusters, each segmenting 3 different customer types:<br><br>
-* Purple - Low consumption households, likely less popullated homes with few people or power consuming appliances <br><br>
-* Yellow - Medium consumption households, likely average households with balanced power usage. They might be typical family homes with moderate usage of kitchen appliances, laundry, and heating/cooling <br><br>
-* Teal - High consumption household, likely of larger households or homes with more appliances and higher overall electricity usage. They might also be running businesses from their homes or have large families <br><br>
+* Teal - Low consumption households, likely less popullated homes with few people or power consuming appliances <br><br>
+* Purple - Medium consumption households, likely average households with balanced power usage. They might be typical family homes with moderate usage of kitchen appliances, laundry, and heating/cooling <br><br>
+* Yellow - High consumption household, likely of larger households or homes with more appliances and higher overall electricity usage. They might also be running businesses from their homes or have large families <br><br>
 
 With these segments, the utility company can more effectively make data-driven decisions affecting each segment, for instance, with higher consumption households, they may be made aware of methods to help make their energy consumption more economical, through smarter energy usages (using energy at off-peak times, through a brochure showing energy savings statistics for specific times of day), or more enticing incentives encouraging a more efficient and economical consumption pattern. <br><br>
 
