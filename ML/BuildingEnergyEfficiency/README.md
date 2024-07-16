@@ -128,7 +128,8 @@ From a sample of the predicted classes, we can demonstrate the predictive accura
 * Optimize building features such as insulation, orientation, and glazing area to achieve better energy efficiency<br><br><br>
 
 ## Notebook
-https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h<br><br>
+[Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/BuildingEnergyEfficiency/ML_energy_efficiency.ipynb)<br>
+[Interactive](https://colab.research.google.com/drive/1Jd-zffd6wJn10naXk3p-ssDY1vl7RN_h)<br><br>
 
 ## References
 Random Forest Classifier using Scikit-learn.<br>
