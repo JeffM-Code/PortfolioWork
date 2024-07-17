@@ -5,5 +5,4 @@
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
 
 ### In progress*
-* Optimal renewable generation timing<br><br>
-* Energy trading algorithm<br><br>
+* Optimal renewable generation timing via optimization model<br><br>

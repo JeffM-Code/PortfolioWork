@@ -17,11 +17,7 @@ def load_and_preprocess_data(file_path):
     return data
 
 train_files = [
-    'ML\\ImbalancePricing\\data\\train\\train_1.csv',
-    'ML\\ImbalancePricing\\data\\train\\train_2.csv',
-    'ML\\ImbalancePricing\\data\\train\\train_3.csv',
-    'ML\\ImbalancePricing\\data\\train\\train_4.csv',
-    'ML\\ImbalancePricing\\data\\train\\train_5.csv'
+    'ML\\ImbalancePricing\\data\\train\\train_1.csv'
 ]
 
 all_train_data = pd.concat([load_and_preprocess_data(file) for file in train_files])

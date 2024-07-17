@@ -2,13 +2,21 @@
 Imbalance Pricing Insights<br><br>
 
 ## Info
-The wholesale electricity market is set up so that supply should always meet demand on the transmission system, thorough ensuring the contracts between parties including organizations that require electricity for their customers (suppliers) and organizations that produce electricity (generators) are such that balancing actions given to a party, are in accordance with agreed rules, to either increase or decrease generation, or increase or decrease demand, depending on the appropriate balancing action, and the dataset utilized pertains to this balancing act, more specifically referred to as **imbalance pricing**.<br><br>
+The wholesale electricity market is set up so that supply should always meet demand on the transmission system, thorough ensuring the contracts between parties including organizations that require electricity for their customers (suppliers) and organizations that produce electricity (generators) are such that balancing actions given to a party, are in accordance with agreed rules, to either increase or decrease generation, or increase or decrease demand, depending on the appropriate balancing action, and the dataset utilized pertains to this balancing act, more specifically referred to as *imbalance pricing*.<br><br>
 
-#### Imbalance pricing analysis:<br><br>
+#### Energy market:<br><br>
+<img src="reports/figures/market.png" alt="market" width="650"/><br><br>
+*Figure 1 - General market behavior overview.*<br><br>
+
+*Figure 1* helps to determine the market conditions affecting system sell and buy prices, which helps to understand the context in which factors affecting the algorithm's performance as it tries to forecast future trends.<br><br>
+
+System sell prices tend to increase during periods of high demand, and this correlation suggests that when demand is high, the cost to purchase or balance the grid increases, leading to higher sell prices.<br><br>
+
+#### Imbalance pricing:<br><br>
 <img src="reports/figures/analysis.png" alt="price scatter" width="650"/><br><br>
-*Figure 1 - System buy and sell prices, Net Imbalance Volume & total accepted offer bid volumes over time.*<br><br>
+*Figure 2 - System buy and sell prices, Net Imbalance Volume & total accepted offer bid volumes over time.*<br><br>
 
-Above, are key important aspects of the data acquired on energy trading under energy balancing. The **buy/sell price** fluctuates based on market conditions (supply & demand), the **net imbalance volume determines** the frequency and magnitude at which the system experiences imbalance, and the **total accepted bid and offers volumes** reflect the amount of energy accepted for generation (offer volumes) or consumption reduction (bid volumes) by the market operator to optimally balance supply and demand, so offers (generation increases or demand decreases) increase, as bids (generation decreases or demand increases) decrease, which achieves balance.<br><br>
+Above, are key important aspects of the data acquired on energy trading under energy balancing. The *buy/sell price* fluctuates based on market conditions (supply & demand), the *net imbalance volume determines* the frequency and magnitude at which the system experiences imbalance, and the *total accepted bid and offers volumes* reflect the amount of energy accepted for generation (offer volumes) or consumption reduction (bid volumes) by the market operator to optimally balance supply and demand, so offers (generation increases or demand decreases) increase, as bids (generation decreases or demand increases) decrease, which achieves balance.<br><br>
 For unlocking value from this data, certain strategic insights should be determined. A way to do this, could be through machine learning models to derive valuable insights based on acquired data through volume / price forecasting. A large benefit of this type of prediction / forecasting, helps to inform trading strategies, with:
 * *Price* - Where bids can be higher during anticipated price spikes and lower during anticipated price drops, to improve the chance of successful bids, to optimizing market participation.<br><br>
 * *Accepted offer volume* - By knowing when there is likely to be higher acceptance, they can submit more competitive bids that align with market conditions to increase the likelihood of acceptance.<br><br>
@@ -19,7 +27,7 @@ For unlocking value from this data, certain strategic insights should be determi
 * Long Short-term Memory (LSTM)<br><br>
 
 <img src="reports/figures/LSTM.png" alt="LSTM" width="690"/><br><br>
-*Figure 2 - LSTM model architecture.*<br><br>
+*Figure 3 - LSTM model architecture.*<br><br>
 
 It is a type of recurrent neural network (RNN) where the output from the previous step is fed as input to the current step, and as shown in *Figure 2*, input $x$ is passed to the hidden layer $h$, which has a loop for memory storage, passing information to the output $y$. The hidden layers act as short-term memory, carrying information to the next set of layers.<br><br>
 
@@ -33,7 +41,7 @@ It is a type of recurrent neural network (RNN) where the output from the previou
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/price_scatter.png" alt="price scatter" width="470" height="400"/><br><br>
-*Figure 3 - Actual vs predicted prices scatter plot.*<br><br>
+*Figure 4 - Actual vs predicted prices scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -54,7 +62,7 @@ R2 Score: 0.22286856315930337
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/accepted_offer_volume_scatter.png" alt="accepted offer volume scatter" width="470" height="400"/><br><br>
-*Figure 4 - Actual vs predicted total accepted volume scatter plot.*<br><br>
+*Figure 5 - Actual vs predicted total accepted volume scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -74,7 +82,7 @@ R2 Score: 0.7708270743038639
 #### LSTM
 ##### Actual vs Prediction:<br><br>
 <img src="reports/figures/niv_scatter.png" alt="heating load prediction" width="470" height="400"/><br><br>
-*Figure 5 - Actual vs predicted NIV scatter plot.*<br><br>
+*Figure 6 - Actual vs predicted NIV scatter plot.*<br><br>
 
 ##### Scores:<br><br>
 ```
@@ -89,15 +97,15 @@ R2 Score: 0.20173916151965587
 ### Application
 ##### System buy / sell price model:<br><br>
 <img src="reports/figures/price_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 6 - Model system buy & sell price prediction on test_1 dataset.*<br><br>
+*Figure 7 - Model system buy & sell price prediction on test_1 dataset.*<br><br>
 
 ##### Accepted offer volume:<br><br>
 <img src="reports/figures/accepted_offer_volume_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 7 - Model total accepted offer volume prediction on test_1 dataset.*<br><br>
+*Figure 8 - Model total accepted offer volume prediction on test_1 dataset.*<br><br>
 
 ##### Net imbalance volume:<br><br>
 <img src="reports/figures/niv_pred.png" alt="heating load prediction" width="650"/><br><br>
-*Figure 8 - Model NIV prediction on test_1 dataset.*<br><br>
+*Figure 9 - Model NIV prediction on test_1 dataset.*<br><br>
 
 Each model had different evaluation performances, with the first (price) being reasonable, with differing performance with each subsequent one, which may be explained by complexity of curves, as its much more difficult to predict a curve with a lot of variance than one with fewer which is a likely reason, however further analysis and model tuning will be necessary to see if this, or other factors are at play here.<br><br>
 
@@ -123,6 +131,13 @@ Link: https://www.geeksforgeeks.org/long-short-term-memory-lstm-rnn-in-tensorflo
 
 System sell and buy prices.<br>
 
+Generation by fuel type.<br>
+
+Rolling system demand.<br>
+
 Elexon<br>
 
-Link: https://bmrs.elexon.co.uk/system-prices
+Links:<br>
+https://bmrs.elexon.co.uk/system-prices,<br>
+https://bmrs.elexon.co.uk/generation-by-fuel-type,<br>
+https://bmrs.elexon.co.uk/rolling-system-demand
