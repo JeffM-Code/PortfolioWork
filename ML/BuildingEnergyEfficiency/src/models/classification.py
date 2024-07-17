@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 from tabulate import tabulate
+import joblib
 
 train_file_path = 'ML\\BuildingEnergyEfficiency\\data\\train\\train.csv'
 test_file_path = 'ML\\BuildingEnergyEfficiency\\data\\test\\test.csv' 
@@ -79,3 +80,6 @@ print(test_data[['Heating Load Class', 'Heating Load Prediction']])
 
 print("\n\nPredictions for Cooling Load:\n")
 print(test_data[['Cooling Load Class', 'Cooling Load Prediction']])
+
+joblib.dump(clf_heating, 'ML\\BuildingEnergyEfficiency\\src\\models\\heating_load_classifier.bin')
+joblib.dump(clf_cooling, 'ML\\BuildingEnergyEfficiency\\src\\models\\cooling_load_classifier.bin')
