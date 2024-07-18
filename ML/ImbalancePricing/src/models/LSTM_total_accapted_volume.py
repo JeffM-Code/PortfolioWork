@@ -53,6 +53,7 @@ lstm_model.add(Dense(units=1))
 
 lstm_model.compile(optimizer='adam', loss='mean_squared_error')
 lstm_model.fit(X, y, batch_size=32, epochs=50)
+
 test_scaled_data = scaler.transform(test_volume_data)
 X_test, y_test = create_dataset(test_scaled_data, time_step)
 X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
@@ -89,3 +90,5 @@ plt.xlabel('Date')
 plt.ylabel('Total Accepted Offer Volume')
 plt.legend()
 plt.show()
+
+lstm_model.save('ML\\ImbalancePricing\\src\\models\\LSTM_total_accepted_volume.keras')

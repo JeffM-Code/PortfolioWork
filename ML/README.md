@@ -5,4 +5,5 @@
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
 
 ### Project Model Applications*
-* [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)
+* [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
+* [Imbalance Pricing Forecasting Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)

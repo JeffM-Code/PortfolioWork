@@ -93,3 +93,5 @@ plt.xlabel('Date')
 plt.ylabel('Net Imbalance Volume')
 plt.legend()
 plt.show()
+
+lstm_model.save('ML\\ImbalancePricing\\src\\models\\LSTM_net_imbalance_volume.keras')

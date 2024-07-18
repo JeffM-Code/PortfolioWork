@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
+from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
@@ -28,7 +28,6 @@ test_price_data = test_data[['SystemSellPrice']].values
 
 train_series = pd.Series(train_price_data.flatten(), index=all_train_data.index)
 test_series = pd.Series(test_price_data.flatten(), index=test_data.index)
-
 
 combined_price_data = np.concatenate((train_price_data, test_price_data), axis=0)
 
@@ -59,8 +58,14 @@ lstm_model.add(Dense(units=50))
 lstm_model.add(Dense(units=1))
 
 lstm_model.compile(optimizer='adam', loss='mean_squared_error')
-
 lstm_model.fit(X, y, batch_size=32, epochs=50)
+
+test_scaled_data = scaler.transform(test_price_data)
+X_test, y_test = create_dataset(test_scaled_data, time_step)
+X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
+
+test_predictions = lstm_model.predict(X_test)
+test_predictions = scaler.inverse_transform(test_predictions)
 
 test_series_adjusted = test_series[time_step + 1:]
 
@@ -84,13 +89,6 @@ plt.ylabel('Predicted Prices')
 plt.title('Actual vs Predicted Prices Scatter Plot')
 plt.show()
 
-test_predictions = lstm_model.predict(X_test)
-test_predictions = scaler.inverse_transform(test_predictions)
-
-test_series_adjusted = test_series[time_step + 1:]
-
-test_predictions_df = pd.DataFrame(test_predictions, index=test_series_adjusted.index, columns=['Predicted Price'])
-
 plt.figure(figsize=(14, 8))
 plt.plot(test_series.index, test_series, label='Actual Test Data', color='blue')
 plt.plot(test_predictions_df.index, test_predictions_df['Predicted Price'], label='Predicted Test Data', color='green')
@@ -98,3 +96,5 @@ plt.xlabel('Date')
 plt.ylabel('System Sell Price')
 plt.legend()
 plt.show()
+
+lstm_model.save('ML\\ImbalancePricing\\src\\models\\LSTM_price.keras')
