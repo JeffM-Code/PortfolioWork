@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, Input
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
