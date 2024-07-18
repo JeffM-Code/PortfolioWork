@@ -7,3 +7,4 @@
 ### Project Model Applications*
 * [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
 * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
+* [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>

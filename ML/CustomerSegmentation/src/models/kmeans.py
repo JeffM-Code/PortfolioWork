@@ -1,14 +1,13 @@
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 from sklearn.decomposition import PCA
+import pickle
 
-file_path = 'ML\\CustomerSegmentation\\data\\train\\train.csv'
+file_path = 'ML/CustomerSegmentation/data/train/train_1.csv'
 
 data = pd.read_csv(file_path, delimiter=',')
 data.replace('?', np.nan, inplace=True)
@@ -48,5 +47,11 @@ plt.ylabel('PCA Component 2')
 plt.colorbar(label='Cluster')
 plt.show()
 
-clustered_file_path = 'clustered_data.csv'
-data.to_csv(clustered_file_path, index=False)
+model_file_path = 'ML/CustomerSegmentation/src/models/kmeans_model.pkl'
+scaler_file_path = 'ML/CustomerSegmentation/src/models/scaler.pkl'
+
+with open(model_file_path, 'wb') as model_file:
+    pickle.dump(kmeans, model_file)
+
+with open(scaler_file_path, 'wb') as scaler_file:
+    pickle.dump(scaler, scaler_file)
