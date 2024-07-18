@@ -4,13 +4,12 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.layers import LSTM, Dense, Dropout, Input
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-import pickle
 
 def load_and_preprocess_data(file_path):
     data = pd.read_csv(file_path)
-    data.fillna(method='ffill', inplace=True)
+    data.ffill(inplace=True)
     data['SettlementDate'] = pd.to_datetime(data['SettlementDate'])
     data['StartTime'] = pd.to_datetime(data['StartTime'])
     data.set_index('StartTime', inplace=True)
@@ -18,11 +17,11 @@ def load_and_preprocess_data(file_path):
     return data
 
 train_files = [
-    'ML\\ImbalancePricing\\data\\train\\train_1.csv',
+    'ML/ImbalancePricing/data/train/train_1.csv',
 ]
 
 all_train_data = pd.concat([load_and_preprocess_data(file) for file in train_files])
-test_file_path = 'ML\\ImbalancePricing\\data\\test\\test_1.csv'
+test_file_path = 'ML/ImbalancePricing/data/test/test_1.csv'
 test_data = load_and_preprocess_data(test_file_path)
 train_price_data = all_train_data[['SystemSellPrice']].values
 test_price_data = test_data[['SystemSellPrice']].values
@@ -48,15 +47,17 @@ X, y = create_dataset(scaled_data, time_step)
 
 X = X.reshape(X.shape[0], X.shape[1], 1)
 
-lstm_model = Sequential()
-lstm_model.add(LSTM(units=100, return_sequences=True, input_shape=(time_step, 1)))
-lstm_model.add(Dropout(0.2))
-lstm_model.add(LSTM(units=100, return_sequences=True))
-lstm_model.add(Dropout(0.2))
-lstm_model.add(LSTM(units=100))
-lstm_model.add(Dropout(0.2))
-lstm_model.add(Dense(units=50))
-lstm_model.add(Dense(units=1))
+lstm_model = Sequential([
+    Input(shape=(time_step, 1)),
+    LSTM(units=100, return_sequences=True),
+    Dropout(0.2),
+    LSTM(units=100, return_sequences=True),
+    Dropout(0.2),
+    LSTM(units=100),
+    Dropout(0.2),
+    Dense(units=50),
+    Dense(units=1)
+])
 
 lstm_model.compile(optimizer='adam', loss='mean_squared_error')
 lstm_model.fit(X, y, batch_size=32, epochs=50)
@@ -98,5 +99,4 @@ plt.ylabel('System Sell Price')
 plt.legend()
 plt.show()
 
-with open('ML\\ImbalancePricing\\src\\models\\LSTM_price.bin', 'wb') as file:
-    pickle.dump(lstm_model, file)
+lstm_model.save('ML/ImbalancePricing/src/models/LSTM_price.keras')
