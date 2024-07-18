@@ -6,6 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+import pickle
 
 def load_and_preprocess_data(file_path):
     data = pd.read_csv(file_path)
@@ -97,4 +98,5 @@ plt.ylabel('System Sell Price')
 plt.legend()
 plt.show()
 
-lstm_model.save('ML\\ImbalancePricing\\src\\models\\LSTM_price.keras')
+with open('ML\\ImbalancePricing\\src\\models\\LSTM_price.bin', 'wb') as file:
+    pickle.dump(lstm_model, file)
