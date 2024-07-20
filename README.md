@@ -10,6 +10,6 @@ I have a very data-driven stance and approach to problem solving, as I believe t
 * [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
 * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
 * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
-* [Turbine Power Consumption Simulation Model](https://github.com/JeffM-Code/TurbinePowerConsumptionSimulationModel)<br><br>
+* [Turbine Power Consumption Simulation Model](https://github.com/JeffM-Code/TurbinePowerConsumptionSimulationModel)<br><br><br>
 
 Model development is documented, and interactive applications of each is also available as well.
