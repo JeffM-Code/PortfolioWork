@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import learning_curve
 import seaborn as sns
+import pickle
 
 file_paths = [
     'ML\\GasTurbineConsumption\\data\\train\\train_1.csv',
@@ -28,7 +29,6 @@ X_test = test_df[['input_voltage']]
 y_test = test_df['el_power']
 
 model = LinearRegression()
-
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
@@ -38,7 +38,9 @@ r2 = r2_score(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 print(f'R^2 Score: {r2}')
 
-# Error distribution with KDE curve
+with open('ML\\GasTurbineConsumption\\src\\models\\linear_regression_model.pkl', 'wb') as file:
+    pickle.dump(model, file)
+
 errors = y_test - y_pred
 plt.figure(figsize=(12, 6))
 sns.histplot(errors, bins=30, kde=True, color='blue')
@@ -48,7 +50,6 @@ plt.title('Distribution of Prediction Errors')
 plt.grid(True)
 plt.show()
 
-# Learning curves
 train_sizes, train_scores, test_scores = learning_curve(
     model, X_train, y_train, cv=5, scoring='neg_mean_squared_error',
     train_sizes=np.linspace(0.1, 1.0, 10)
