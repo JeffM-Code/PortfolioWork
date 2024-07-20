@@ -1,5 +1,5 @@
 # Projects<br>
-I have a very data-driven stance and approach to problem solving, as I believe there's a lot of potential in value from data in informing exceptional decisions, and I engineer and analyze solutions to problems that these projects should demonstrate. Hope they make for an interesting read.<br><br><br>
+I have a very data-driven stance and approach to problem solving, as I believe there's a lot of potential in value from data in informing exceptional decision making, and I engineer and analyze solutions to problems that these projects should demonstrate. Hope they make for an interesting read.<br><br><br>
 
 ## Machine Learning<br>
 * [Building heating / cooling efficiency modelling](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/BuildingEnergyEfficiency)<br><br>
@@ -7,16 +7,16 @@ I have a very data-driven stance and approach to problem solving, as I believe t
 * [Imbalance pricing insights](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/ImbalancePricing)<br><br>
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
 
-#### Interactive Applications*
+### Interactive Applications*
 * [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
 * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
 * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
 * [Turbine Power Consumption Simulation Model](https://github.com/JeffM-Code/TurbinePowerConsumptionSimulationModel)<br><br>
 
-Models development is documented, and interactive applications of each model are available as well.<br><br>
+Model development is documented, and interactive applications of each is also available as well.<br><br><br>
 
 ## Data Analytics<br>
-#### PowerBI Visualisations*
+### PowerBI Visualisations*
 * [Loyaly programme analysis](https://app.powerbi.com/groups/me/reports/0b10e56a-d2d1-4418-b387-06d9ad8a4b8c/2e91c8ec2eb252b91667?ctid=15830474-cef0-4326-88db-96e5ab019d8a&experience=power-bi) ([alternative link](https://github.com/JeffM-Code/PortfolioWork/blob/main/DataAnalytics/project_reports/loyalty_scheme_analysis.pdf))<br><br>
     * Loyalty programme analysis, for recomendation on revenue-driving and customer engagement strategies.<br><br>
 * [Site product profitability](https://app.powerbi.com/groups/me/reports/def9f46c-c714-4df0-a54c-15f2e911065c/2b28c6e510e6d7886e0b?ctid=15830474-cef0-4326-88db-96e5ab019d8a&experience=power-bi&bookmarkGuid=708cb967-f7f5-48bb-b1ec-ebd9ad01e2a5) ([alternative link](https://github.com/JeffM-Code/PortfolioWork/blob/main/DataAnalytics/project_reports/profit_analysis.pdf))<br><br>
