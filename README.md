@@ -6,7 +6,7 @@ I have a very data-driven stance and approach to problem solving, as I believe t
 * [Imbalance pricing insights](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/ImbalancePricing)<br><br>
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
 
-### Interactive Applications*
+### Interactive Applications*<br><br>
 * [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
 * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
 * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
