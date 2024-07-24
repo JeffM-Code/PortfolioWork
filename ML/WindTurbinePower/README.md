@@ -14,7 +14,7 @@ Using a dataset of a unique compilation of field based meteorological observatio
 
 Given the data, this is how each measured attribute may affect turbine power generation:<br><br>
 ### Miscellaneous:<br>
-These don't really effect power generation very much, but are worth consideration, since they are part of the measurement.<br><br>
+These don't really effect power generation very much, but are worth consideration since they are part of the measurement.<br><br>
 * *Time* - Certain times of day, or seasons may have particulalry high wind speeds<br>
 
 * *Temperature* - Temperature affects air density, which in turn affects the kinetic energy available in the wind, hence since colder air is denser it can therefore carry more energy, potentially leading to higher power generation<br>
@@ -63,7 +63,7 @@ It uses a leaf-wise tree growth strategy for building decision trees as demonstr
 Which captures complex patterns in the data more effectively, resulting in higher accuracy and efficiency.<br><br>
 
 ### Performance
-Generally, the lower RMSE value, the better the model performance.<br><br>
+Generally, the lower the RMSE value, the better the model performance.<br><br>
 
 * RMSE on Location 3 test data (0.226) means that, on average, the model's predictions for Location 3 deviate from the actual power values by approximately 0.226 units, so the model might be capturing most of the patterns in the data but may be missing some finer details or variability specific to Location 3.<br><br>
 
