@@ -8,6 +8,8 @@ I have a very data-driven stance and approach to problem solving, as I believe t
 * [Imbalance pricing insights](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/ImbalancePricing)<br><br>
     * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
-    * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br><br>
+    * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
+* [Wind turbine power](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/WindTurbinePower)<br><br><br>
 
-Model development is documented, and interactive applications for each are available as well.
+
+Model development is documented, and interactive applications for some are available as well.
