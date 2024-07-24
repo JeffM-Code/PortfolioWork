@@ -4,9 +4,9 @@ Wind Turbine Generation<br><br>
 ## Info
 Using a dataset of a unique compilation of field based meteorological observations and wind turbine power generation, the goal is to predict its power output given the conditions of a wind turbine capability to generate power, i.e., wind, through attributes of meteorological data.<br><br>
 
-#### Wind:<br><br>
+#### Onshore turbine:<br><br>
 <img src="reports/figures/wind_turbine.jpg" alt="wind turbine" width="590"/><br><br>
-*Figure 1 - Wind turbine illustration.*<br><br>
+*Figure 1 - Onshore turbine illustration.*<br><br>
 
 #### Power generated:<br><br>
 <img src="reports/figures/power_over_time.png" alt="power over time" width="590"/><br><br>
@@ -15,16 +15,16 @@ Using a dataset of a unique compilation of field based meteorological observatio
 Given the data, this is how each measured attribute may affect turbine power generation:<br><br>
 #### Miscellaneous:<br><br>
 These don't really effect power generation very much, but are worth consideration, since they are part of the measurement.<br><br>
-* *Time* - Certain times of day, or seasons may have particulalry high wind speeds<br><br>
+* *Time* - Certain times of day, or seasons may have particulalry high wind speeds<br>
 
-* *Temperature* - Temperature affects air density, which in turn affects the kinetic energy available in the wind, hence since colder air is denser it can therefore carry more energy, potentially leading to higher power generation<br><br>
+* *Temperature* - Temperature affects air density, which in turn affects the kinetic energy available in the wind, hence since colder air is denser it can therefore carry more energy, potentially leading to higher power generation<br>
 
-* *Relative humidity* - Higher humidity translates to increased water vapor in the air, which in turn could slightly reduce air density<br><br>
+* *Relative humidity* - Higher humidity translates to increased water vapor in the air, which in turn could slightly reduce air density<br>
 
-* *Dew point* - Dew point determines air moisture content, its impact on air density and wind power production is generally minor<br><br>
+* *Dew point* - Dew point determines air moisture content, its impact on air density and wind power production is generally minor<br>
 
 #### Crucial:
-* *Wind speed* - Wind speed has a cubic relationship with power generation, meaning that small increases in wind speed lead to large increases in power output, and this relationship underpins the importance of siting wind turbines in areas with consistently high wind speeds to maximize energy production, since even modest increases in average wind speed result in significantly high energy yields<br><br>
+* *Wind speed* - Wind speed has a cubic relationship with power generation, meaning that small increases in wind speed lead to large increases in power output, and this relationship underpins the importance of siting wind turbines in areas with consistently high wind speeds to maximize energy production, since even modest increases in average wind speed result in significantly high energy yields<br>
 
 $$P ∝ V^3$$
 <br>
