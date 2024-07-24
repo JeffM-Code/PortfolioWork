@@ -12,7 +12,7 @@ Using a dataset of a unique compilation of field based meteorological observatio
 <img src="reports/figures/power_over_time.png" alt="power over time" width="590"/><br><br>
 *Figure 2 - Power generated over time.*<br><br>
 
-Given the data, this is how each measured attribute may affect turbine power generation:<br><br>
+Given the data, this is how each measured attribute may affect turbine power generation:<br>
 #### Miscellaneous:<br><br>
 These don't really effect power generation very much, but are worth consideration, since they are part of the measurement.<br><br>
 * *Time* - Certain times of day, or seasons may have particulalry high wind speeds<br>
@@ -21,7 +21,7 @@ These don't really effect power generation very much, but are worth consideratio
 
 * *Relative humidity* - Higher humidity translates to increased water vapor in the air, which in turn could slightly reduce air density<br>
 
-* *Dew point* - Dew point determines air moisture content, its impact on air density and wind power production is generally minor<br>
+* *Dew point* - Dew point determines air moisture content, its impact on air density and wind power production is generally minor<br><br>
 
 #### Crucial:
 * *Wind speed* - Wind speed has a cubic relationship with power generation, meaning that small increases in wind speed lead to large increases in power output, and this relationship underpins the importance of siting wind turbines in areas with consistently high wind speeds to maximize energy production, since even modest increases in average wind speed result in significantly high energy yields<br>
