@@ -12,7 +12,7 @@ Using a dataset of a unique compilation of field based meteorological observatio
 <img src="reports/figures/power_over_time.png" alt="power over time" width="590"/><br><br>
 *Figure 2 - Power generated over time.*<br><br>
 
-Given the data, this is how each measured attribute may affect turbine power generation:<br>
+Given the data, this is how each measured attribute may affect turbine power generation:<br><br>
 ### Miscellaneous:<br>
 These don't really effect power generation very much, but are worth consideration, since they are part of the measurement.<br><br>
 * *Time* - Certain times of day, or seasons may have particulalry high wind speeds<br>
