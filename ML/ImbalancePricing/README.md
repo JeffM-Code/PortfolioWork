@@ -112,9 +112,14 @@ Each model had different evaluation performances, with the first (price) being r
 #### Practical:
 * Generally inform trading strategies based on forecast<br><br><br>
 
+
+## Interactive Application
+* [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
+
 ## Notebook
 [Static](https://github.com/JeffM-Code/PortfolioWork/blob/main/ML/ImbalancePricing/ML_imbalance_pricing.ipynb)<br><br>
 [Interactive](https://colab.research.google.com/drive/1So3vq08OLjLI7fcQpDyyJb2-iNQ7bnpa#scrollTo=A4ADKW3urL7y)<br><br>
+
 
 ## References
 Imbalance pricing guidance.<br>

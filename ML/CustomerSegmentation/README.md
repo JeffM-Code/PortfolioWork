@@ -71,6 +71,10 @@ We have three clusters, each segmenting 3 different customer types:<br><br>
 
 With these segments, the utility company can more effectively make data-driven decisions affecting each segment, for instance, with higher consumption households, they may be made aware of methods to help make their energy consumption more economical, through smarter energy usages (using energy at off-peak times, through a brochure showing energy savings statistics for specific times of day), or more enticing incentives encouraging a more efficient and economical consumption pattern. <br><br>
 
+
+## Interactive Application
+* [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
+
 #### Practical:
 * Customer segmentation for delivery of targeted interventions informing economical energy use (cost-cutting saving measures for *appropriate* consumers)<br><br><br>
 

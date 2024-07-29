@@ -122,6 +122,10 @@ Predictions for Cooling Load:
 
 From a sample of the predicted classes, we can demonstrate the predictive accuracy which seems to reflect the high computed accuracy of the model.<br><br>
 
+
+## Interactive Application
+* [Building Load Classifier](https://github.com/JeffM-Code/BuildingLoadClassifier)<br><br>
+
 #### Practical:
 * (Efficient) Assessment of heating and cooling needs of building designs
 * Plan renovations and improvements for existing buildings to move them to a lower energy load category
