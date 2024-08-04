@@ -11,7 +11,7 @@ For instance, through Azure:<br><br>
 
 ## <img src="azure_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> Azure MLOps<br><br>
 
-<img src="azure_mlops.png" alt="workflow" width="820" height="590"/><br><br><br>
+<img src="azure_mlops.png" alt="workflow" width="920" height="580"/><br><br><br>
 
 *Azure MLOps architecture: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625*<br><br><br>
 
@@ -20,7 +20,7 @@ And through AWS:<br><br>
 
 ## <img src="aws_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> AWS MLOps<br><br>
 
-<img src="aws_mlops.jpg" alt="workflow" width="860" height="590"/><br><br><br>
+<img src="aws_mlops.jpg" alt="workflow" width="920" height="590"/><br><br><br>
 
 *AWS MLOps architecture: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/*<br><br><br>
 
