@@ -4,9 +4,9 @@ Growing my understanding of MLOps has meant explicitly structuring my workflows 
 So, for each model developed, a problem was understood and defined, and solved at the end through a machine learning approach. Some models were'nt published as data was difficult to interpret, or poorly documented, as I normally like to proceed with appropriately documented data, as it helps ensure high model performance and interpretation, so even if the data quality is not ideal, then provided its well-documented I can at least do the necessary data engineering to make it ideally usable.<br><br>
 
 ## Workflow<br><br>
-<img src="workflow.png" alt="workflow" width="850" height="780"/><br><br><br>
+<img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
 *General model development workflow**<br><br><br>
 
 Problem understanding and definition for each model was done, to ensure high relevancy to personal domain expertise (energy / physics) to ensure understanding and interpretation of model performance was realized. Deployment simply means packaging into interactive application on Streamlit, but ideally an AWS or Azure cloud platform would be ideal, especially for automating the feedback loops presented in the diagram.<br><br>
 
-Deployment efforts were extensive to ensure a interactive model was available, as I believe that this helps any reader understand the output of the model, to better understand the motivations underpinning its development (problem being solved, performance, effectiveness, and so on).<br><br>
+Deployment efforts are extensive to ensure an interactive model is available, as I believe that this helps any reader better understand the output of the model, and the motivation behind its development (problem(s) being solved, performance, effectiveness, and so on).<br><br>
