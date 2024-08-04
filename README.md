@@ -1,7 +1,7 @@
 # ⚡ Projects<br>
 I have a very data-driven stance and approach to problem solving, as I believe there's a lot of potential in value from data in informing exceptional decision making, and I engineer and analyze solutions to problems that these projects should demonstrate. Hope they make for an interesting read.<br><br>
 
-#### [General model development details](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/DevelopmentDetails/README.md)<br><br>
+### [General model development details](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/DevelopmentDetails/README.md)<br><br>
 
 ## Models:
 * [Building heating / cooling efficiency modelling](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/BuildingEnergyEfficiency)<br><br>
