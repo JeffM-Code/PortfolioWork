@@ -20,7 +20,7 @@ There are two ways to determine correlated values,
 <img src="reports/figures/heatmap.png" alt="heatmap" width="590"/><br><br>
 *Figure 3 - Correlation heatmap of variables.*<br><br>
 
-We can see that certain varaibles are highly correlated, including global active power and intensity, but some aren't like voltage and global intensity.<br><br>
+We can see that certain variables are highly correlated, including global active power and intensity, but some aren't like voltage and global intensity.<br><br>
 This informs feature selection, and other means to optimize model performance.<br><br>
 
 #### Ideal K:<br><br>
