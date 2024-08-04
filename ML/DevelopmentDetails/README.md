@@ -7,4 +7,6 @@ So, for each model developed, a problem was understood and defined, and solved a
 <img src="workflow.png" alt="workflow" width="419" height="692"/><br><br><br>
 *General model development workflow**<br><br><br>
 
-Problem understanding and definition for each model was done, to ensure high relevancy to personal domain expertise (energy / physics) to ensure understanding and interpretation of model performance was realized. Deployment simply means packaging into interactive application on Streamlit, but ideally an AWS or Azure cloud platform would be ideal, especially for automating the feedback loops presented in the diagram, and deployment efforts were extensive as I believe that this helps any reader understand the output of the application, to understand the motivations underpinning its development.<br><br>
+Problem understanding and definition for each model was done, to ensure high relevancy to personal domain expertise (energy / physics) to ensure understanding and interpretation of model performance was realized. Deployment simply means packaging into interactive application on Streamlit, but ideally an AWS or Azure cloud platform would be ideal, especially for automating the feedback loops presented in the diagram.<br><br>
+
+Deployment efforts were extensive to ensure a interactive model was available, as I believe that this helps any reader understand the output of the model, to better understand the motivations underpinning its development (problem being solved, performance, effectiveness, and so on).<br><br>
