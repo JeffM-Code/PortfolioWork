@@ -5,7 +5,7 @@
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
 *General model development workflow**<br><br><br>
 
-Utilization of cloud technologies (AWS, Azure, or GCP) can help automate most aspects of this workflow, for greater efficiency and model performance. I am building my Azure and AWS cloud engineering skills, so I hope to be able to architect end-to-end ML solutions in that way, as it's more robust.<br><br>
+Utilization of cloud technologies (AWS, Azure, or GCP) can help automate most aspects of this workflow, for greater efficiency and model performance. I am constantly growing my Azure and AWS cloud engineering skills, so I hope to be able to architect end-to-end ML solutions in that way, as it's more robust.<br><br>
 
 For instance, through Azure:<br><br>
 
