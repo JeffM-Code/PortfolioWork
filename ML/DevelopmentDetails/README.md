@@ -1,7 +1,7 @@
-# Model Development
+# Model Development Strategies
 <br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments. So, I developed this workflow to help ensure consitency in the quality of my developed models.<br><br><br>
 
-## Personal Workflow<br><br>
+## Personal<br><br>
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
 *General model development workflow**<br><br><br>
 
@@ -9,19 +9,19 @@ Utilization of cloud technologies (AWS, Azure, or GCP) can help automate most as
 
 For instance, through Azure:<br><br>
 
-## <img src="azure_logo.png" style="padding: 10px 20px 0px 0px;" height="39"/> Azure MLOps<br><br>
+## <img src="azure_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> Azure MLOps<br><br>
 
-<img src="azure_mlops.png" alt="workflow" width="860" height="780"/><br><br><br>
+<img src="azure_mlops.png" alt="workflow" width="820" height="590"/><br><br><br>
 
-*Automated training workflow through Azure: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625*<br><br><br>
+*Azure MLOps architecture: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625*<br><br><br>
 
 
 And through AWS:<br><br>
 
-## <img src="aws_logo.png" style="padding: 10px 20px 0px 0px;" height="39"/> AWS MLOps<br><br>
+## <img src="aws_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> AWS MLOps<br><br>
 
-<img src="aws_mlops.jpg" alt="workflow" width="860" height="780"/><br><br><br>
+<img src="aws_mlops.jpg" alt="workflow" width="860" height="590"/><br><br><br>
 
-*Automated training workflow through AWS: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/*<br><br><br>
+*AWS MLOps architecture: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/*<br><br><br>
 
-My goal is to apply cloud solution architectures to proposed problems, with AWS and Azure.
+My goal is to apply cloud solution architectures to proposed problems through AWS and Azure.
