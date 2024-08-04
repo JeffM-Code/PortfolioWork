@@ -1,5 +1,5 @@
-# Model Development<br><br>
-Growing my understanding of MLOps has meant explicitly structuring my workflows to solve a given problem, to optimize chances of successful model experiments.<br><br><br>
+# Model Development
+<br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments.<br><br><br>
 
 ## Workflow<br><br>
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
