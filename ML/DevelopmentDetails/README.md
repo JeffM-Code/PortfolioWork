@@ -1,5 +1,5 @@
 # Model Development Strategies
-<br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments. So, I developed this workflow to help ensure consitency in the quality of my developed models.<br><br><br>
+<br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments. So, I developed this workflow to help ensure consistency in the quality of my developed models.<br><br><br>
 
 ## Personal<br><br>
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
@@ -24,4 +24,4 @@ And through AWS:<br><br>
 
 *AWS MLOps architecture: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/*<br><br><br>
 
-My goal is to apply cloud solution architectures to proposed problems through AWS and Azure.
+My goal is to apply cloud solution architectures to proposed problems through AWS and Azure, to continuously evolve the maturity of my ML workflows.
