@@ -3,11 +3,11 @@
 
 ## Personal Workflow<br><br>
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
-*Personal model development workflow**<br><br><br>
+*Model development workflow**<br><br><br>
 
-This is a personal workflow I normally use to develop models, as I can use open-source tooling to implement it.<br><br>
+This is what I typically use to develop models, as I can use open-source tooling to implement it.<br><br>
 
-However, utilization of cloud technologies (AWS, Azure, or GCP) are a better choice for production, as they can help automate most aspects of this workflow, for greater efficiency and model performance. Therefore, I am constantly growing my cloud engineering skills to be able to architect end-to-end ML solutions in this way instead, as it's more a robust solution for MLOps.<br><br>
+However, cloud technologies (AWS, Azure, or GCP) are a better choice for production, as they can help automate most aspects of this workflow for greater efficiency and model performance. Therefore, I am constantly growing my cloud engineering skills to be able to architect end-to-end ML solutions in this way instead, as that provides a more robust solution for MLOps.<br><br>
 
 Here is a general overview of MLOps more suitable for production models:<br><br>
 
