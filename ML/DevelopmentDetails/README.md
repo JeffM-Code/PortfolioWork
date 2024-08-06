@@ -3,7 +3,7 @@
 
 ## Personal Workflow<br><br>
 <img src="workflow.png" alt="workflow" width="860" height="780"/><br><br><br>
-*General model development workflow**<br><br><br>
+*Personal model development workflow**<br><br><br>
 
 This is a personal workflow I normally use to develop models, as I can use open-source tooling to implement it.<br><br>
 
@@ -39,4 +39,4 @@ The following are illustrations of specific cloud solution architectures for hig
 
 *GCP MLOps architecture: https://cloud.google.com/architecture/architecture-for-mlops-using-tfx-kubeflow-pipelines-and-cloud-build*<br><br><br>
 
-My goal is to apply cloud solution architectures to proposed problems through AWS and Azure, to continuously evolve the maturity of my ML workflows.
+My goal is to apply cloud solution architectures to proposed problems through AWS, Azure or GCP to continuously evolve the maturity of my ML workflows.
