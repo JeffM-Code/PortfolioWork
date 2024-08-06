@@ -2,7 +2,7 @@
 <br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments. So, I developed this workflow to help ensure consistency in the quality of my developed models.<br><br><br>
 
 ## Personal Workflow<br><br>
-<img src="workflow.png" alt="workflow" width="900" height="780"/><br><br><br>
+<img src="workflow.png" alt="workflow" width="940" height="780"/><br><br><br>
 *Model development workflow**<br><br><br>
 
 This is what I typically use to develop models, as I can use open-source tooling to implement it.<br><br>
