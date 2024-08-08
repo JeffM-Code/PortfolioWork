@@ -2,28 +2,28 @@
 <br><br>Growing my understanding of MLOps has meant explicitly structuring my workflows in solving a given problem, to optimize chances of successful model experiments. So, I developed this workflow to help ensure consistency in the quality of my developed models.<br><br><br>
 
 ## Personal Workflow<br><br>
-<img src="workflow.png" alt="workflow" width="940" height="780"/><br><br><br>
+<img src="workflow.png" alt="workflow" width="990" height="780"/><br><br><br>
 *Model development workflow**<br><br><br>
 
 This is what I typically use to develop models, as I can use open-source tooling to implement it.<br><br>
 
 # Motivation
 ## *Problem definition & Scoping*:
-At this stage, the problem is selected based on what I believe to be an interesting problem, whose resulting inference and predicitons I can interpret well, i.e., energy / physics problems.<br><br>
+At this stage, the problem is selected based on what I believe to be an interesting problem, whose resulting inference and predicitons I can interpret well, i.e., energy / physics problems.<br><br><br>
 
 # Code
-Technology stack inlcudes mainly open-source software for engineering the data and developing the model.
+Technology stack inlcudes mainly open-source software for engineering the data and developing the model.<br><br><br>
 
 
 # Data
-I normally like to use Kaggle, Huggingface or a company / business website with good, high quality data (like Elexon).<br><br>
+I normally like to use Kaggle, Huggingface or a company / business website with good, high quality data (like Elexon).<br><br><br>
 
 
 ## *Data Ingestion*:
 Some steps are done manually, but in future will be scraped or interacted with programmatically through APIs.
 
 ## *Data Preparation*:
-This is done after analysis of the data programmatically, to see fit with intended model.
+This is done after analysis of the data programmatically, to see fit with intended model.<br><br><br>
 
 # Model
 ## *Feature engineering*:
@@ -38,17 +38,17 @@ Methods for selection of relevant features include filter, wrapper, or embedded 
 
 
 ### Metrics
-a. Performance:<br>
+Performance:<br>
 Accuracy of model prediction should be reasonable.<br><br>
 
-b. Runtime:<br>
+Runtime:<br>
 They need to make predictions in a reasonable amount of time, some models i've made do take some time with more data made available for prediction, which is something that can be improved with a good feedback loop or iteration of model development.<br><br>
 
-c. Interpretiability:<br>
+Interpretiability:<br>
 Model outputs should be well interepretable, so since I work in domains I am experienced with (physics, energy) I can guide the reader towards what a sensible prediction looks like.<br><br>
 
 
-d. Generalizability:<br>
+Generalizability:<br>
 They should work well on unseen data, which I emulate through holdout sets to test this for each model.<br><br>
 
 ## *Modelling*:
@@ -60,7 +60,7 @@ Model selection techniques are highly specific depending on the problem, so thes
 This is normally done on Streamlit, as it's a free platform to host models, and as models developed are normally small in size within their containers, it seems appropriate to host them there.<br><br>
 
 ## *Feedback Loop*:
-This involves the monitoring of deployed models and looping back to data preparation or problem definition depending on severity of performance issues observed.<br><br>
+This involves the monitoring of deployed models and looping back to data preparation or problem definition depending on severity of performance issues observed.<br><br><br>
 
 # Production
 In general, cloud technologies (AWS, Azure, or GCP) are a better choice for true, production models, as they can automate most aspects of the workflow for greater efficiency and model performance.<br><br>
@@ -77,7 +77,7 @@ The following are illustrations of specific cloud solution architectures for hig
 
 ## <img src="azure_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> Azure<br><br>
 
-<img src="azure_mlops.png" alt="azure mlops" width="970" height="580"/><br><br><br>
+<img src="azure_mlops.png" alt="azure mlops" width="990" height="580"/><br><br><br>
 
 *Azure MLOps architecture: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625*<br><br><br>
 
@@ -91,7 +91,7 @@ The following are illustrations of specific cloud solution architectures for hig
 
 ## <img src="gcp_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> GCP<br><br>
 
-<img src="gcp_mlops.svg" alt="gcp mlops" width="970" height="590"/><br><br><br>
+<img src="gcp_mlops.svg" alt="gcp mlops" width="990" height="590"/><br><br><br>
 
 *GCP MLOps architecture: https://cloud.google.com/architecture/architecture-for-mlops-using-tfx-kubeflow-pipelines-and-cloud-build*<br><br><br>
 
