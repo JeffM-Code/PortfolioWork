@@ -20,35 +20,34 @@ I normally like to use Kaggle, Huggingface or a company / business website with 
 
 
 ## *Data Ingestion*:
-Some steps are done manually, but in future will be scraped or interacted with programmatically through APIs.
+Some steps are done manually, but in future will be scraped or interacted with programmatically through APIs.<br><br>
 
 ## *Data Preparation*:
 This is done after analysis of the data programmatically, to see fit with intended model.<br><br><br>
 
 # Model
 ## *Feature engineering*:
-Feature Transformation:<br>
+### Feature Transformation:<br>
 Including scaling, log transformations, encoding, and so on, to improve performance and interpretiability.<br><br>
 
-Dimensionality Reduction / Feature Extraction:<br>
+### Dimensionality Reduction / Feature Extraction:<br>
 To reduce the number of features or "dimentionality" of the feature space, which can be done through extracting some number of features from a larger space such as through PCA or LDA.<br><br>
 
-Feature Selection:<br>
+### Feature Selection:<br>
 Methods for selection of relevant features include filter, wrapper, or embedded methods to ensure appropriate features used for model training.<br><br>
 
 
-### Metrics
-Performance:<br>
+## Metrics
+### Performance:<br>
 Accuracy of model prediction should be reasonable.<br><br>
 
-Runtime:<br>
+### Runtime:<br>
 They need to make predictions in a reasonable amount of time, some models i've made do take some time with more data made available for prediction, which is something that can be improved with a good feedback loop or iteration of model development.<br><br>
 
-Interpretiability:<br>
+### Interpretiability:<br>
 Model outputs should be well interepretable, so since I work in domains I am experienced with (physics, energy) I can guide the reader towards what a sensible prediction looks like.<br><br>
 
-
-Generalizability:<br>
+### Generalizability:<br>
 They should work well on unseen data, which I emulate through holdout sets to test this for each model.<br><br>
 
 ## *Modelling*:
