@@ -11,16 +11,15 @@ The Q&A application with was then built with LangChain, through the integration 
 
 
 ## Schematic:<br><br>
-<img src="schematic.png" alt="schematic" width="700"/><br><br>
-*Figure 1 - Project schematic.*<br><br>
+<img src="schematic.png" alt="schematic" width="790" height="420"/><br><br>
+*Project schematic.*<br><br>
 
 ## Result
-<img src="dataset.png" width="590"/><br><br>
-*Figure 2 - Functionality illustration.*<br><br>
+<img src="dataset.png" width="890" height="490"/><br><br>
+*Custom dataset loading.*<br><br><br>
 
-<img src="demo.png" width="590"/><br><br>
-*Figure 3 - Functionality illustration.*<br><br>
-
+<img src="demo.png" width="890" height="490"/><br><br>
+*Functionality illustration.*<br><br>
 
 
 The result of the exercise was an implemented system that leverages the capabilities of LangChain, SageMaker, and embedding models to perform effective question answering using a custom dataset.

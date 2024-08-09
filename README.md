@@ -11,4 +11,10 @@ Here, I detail my general approach to developing machine learning models, and un
     * [Imbalance Pricing Forecast Model](https://github.com/JeffM-Code/ImbalancePricingForecastModel)<br><br>
 * [Customer segmentation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/CustomerSegmentation)<br><br>
     * [Segementation Clustering Model](https://github.com/JeffM-Code/SegementationClusteringModel)<br><br>
-* [Wind turbine power](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/WindTurbinePower)<br><br>
+* [Wind turbine power](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/WindTurbinePower)<br><br><br>
+
+### Other:
+* [RAG](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/GenerativeModel)<br><br><br>
+
+### Problem sets:
+* [Linear Algebra](https://colab.research.google.com/drive/1hA7DAK66ybnTuM1kfrBQknyX4M1PyHs_?usp=sharing)<br><br>
