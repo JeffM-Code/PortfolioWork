@@ -44,7 +44,7 @@ Accuracy of model prediction should be reasonable.<br><br>
 They need to make predictions in a reasonable amount of time, some models i've made do take some time with more data made available for prediction, which is something that can be improved with a good feedback loop or iteration of model development.<br><br>
 
 ### Interpretiability:<br>
-Model outputs should be well interepretable, so since I work in domains I am experienced with (physics, energy) I can guide the reader towards what a sensible prediction looks like.<br><br>
+Model outputs should be well interpretable, so since I work in domains I am experienced with (physics, energy) I can guide the reader towards what a sensible prediction looks like.<br><br>
 
 ### Generalizability:<br>
 They should work well on unseen data, which I emulate through holdout sets to test this for each model. So, partitioning of input data should be done sparingly.<br><br>
