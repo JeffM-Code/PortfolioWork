@@ -53,7 +53,7 @@ They should work well on unseen data, which I emulate through holdout sets to te
 *Model data split*<br><br>
 
 
-The *test set* is used to estimate the generalization performance, and the *validation set* is used to select the best model.
+The *test set* is used to estimate the generalization performance, and the *validation set* is used to select the best model.<br><br>
 
 ## *Modelling*:
 Model algorithm is selected, trained, and tuned appropriately here, using the various methods described above including feature engineering.<br><br>
