@@ -2,12 +2,11 @@
 Retrieval Augmented Generation<br><br>
 
 ## Info
-The purpose of this exercise was to implement a Retrieval Augmented Generation (RAG) system using LangChain, specifically tailored for question answering based on a custom dataset.<br><br>
+The purpose of this exercise was to implement a Retrieval Augmented Generation (RAG) system using LangChain, specifically tailored for question answering based on a custom dataset.<br>
 
-A HuggingFace embedding model was used to create embeddings for each document in the knowledge library, the relevant documents were identified, and were combined with the original prompt/question and then sent to the Amazon SageMaker LLM to generate an answer.<br><br>
+A HuggingFace embedding model was used to create embeddings for each document in the knowledge library, the relevant documents were identified, and were combined with the original prompt/question and then sent to the Amazon SageMaker LLM to generate an answer.<br>
 
-
-The Q&A application with was then built with LangChain, through the integration of SageMaker endpoints, then the dataset was prepared, via appropriate formatting of the dataset to build the knowledge database to be used for answering questions.<br><br>
+The Q&A application with was then built with LangChain, through the integration of SageMaker endpoints, then the dataset was prepared, via appropriate formatting of the dataset to build the knowledge database to be used for answering questions.<br><br><br>
 
 
 ## Schematic:<br><br>
@@ -19,7 +18,7 @@ The Q&A application with was then built with LangChain, through the integration 
 *Custom dataset loading.*<br><br><br>
 
 <img src="demo.png" width="890" height="490"/><br><br>
-*Functionality illustration.*<br><br>
+*Functionality illustration.*<br><br><br>
 
 
 The result of the exercise was an implemented system that leverages the capabilities of LangChain, SageMaker, and embedding models to perform effective question answering using a custom dataset.
