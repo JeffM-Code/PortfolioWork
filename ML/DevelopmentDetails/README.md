@@ -12,8 +12,7 @@ This is what I typically use to develop models, as I can use open-source tooling
 At this stage, the problem is selected based on what I believe to be an interesting problem, whose resulting inference and predicitons I can interpret well, i.e., energy / physics problems.<br><br><br>
 
 # Code
-Technology stack inlcudes mainly open-source software for engineering the data and developing the model.<br><br><br>
-
+Technology stack includes mainly open-source software for engineering the data and developing the model.<br><br><br>
 
 # Data
 I normally like to use Kaggle, Huggingface or a company / business website with good, high quality data (like Elexon).<br><br><br>
@@ -48,7 +47,10 @@ They need to make predictions in a reasonable amount of time, some models i've m
 Model outputs should be well interepretable, so since I work in domains I am experienced with (physics, energy) I can guide the reader towards what a sensible prediction looks like.<br><br>
 
 ### Generalizability:<br>
-They should work well on unseen data, which I emulate through holdout sets to test this for each model.<br><br>
+They should work well on unseen data, which I emulate through holdout sets to test this for each model. So, partitioning of input data should be done sparingly.<br><br>
+
+<img src="training.png" width="500" height="180"/><br><br>
+*Model data split*<br><br>
 
 ## *Modelling*:
 Model algorithm is selected, trained, and tuned appropriately here, using the various methods described above including feature engineering.<br>
@@ -68,7 +70,7 @@ Therefore, I am constantly growing my cloud engineering skills to be able to arc
 
 Here is a general overview of MLOps more suitable for production models:<br><br>
 <img src="mlops.svg" alt="mlops" width="920" height="580"/><br><br><br>
-*MLOps schematic: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning*<br><br>
+*MLOps schematic*<br><br>
 
 This would be a more robust pipeline for development, deployment and monitoring, including continous training capabilities to further the level of MLOps maturity.<br><br>
 
@@ -78,20 +80,31 @@ The following are illustrations of specific cloud solution architectures for hig
 
 <img src="azure_mlops.png" alt="azure mlops" width="990" height="580"/><br><br><br>
 
-*Azure MLOps architecture: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625*<br><br><br>
+*Azure MLOps architecture*<br><br><br>
 
 
 ## <img src="aws_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> AWS<br><br>
 
 <img src="aws_mlops.jpg" alt="aws mlops" width="920" height="590"/><br><br><br>
 
-*AWS MLOps architecture: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/*<br><br><br>
+*AWS MLOps architecture*<br><br><br>
 
 
 ## <img src="gcp_logo.png" style="padding: 10px 40px 0px 0px;" height="39"/> GCP<br><br>
 
 <img src="gcp_mlops.svg" alt="gcp mlops" width="990" height="590"/><br><br><br>
 
-*GCP MLOps architecture: https://cloud.google.com/architecture/architecture-for-mlops-using-tfx-kubeflow-pipelines-and-cloud-build*<br><br><br>
+*GCP MLOps architecture*<br><br><br>
 
-My goal is to apply cloud solution architectures to proposed problems through AWS, Azure or GCP to continuously evolve the maturity of my ML workflows.
+My goal is to apply cloud solution architectures to proposed problems through AWS, Azure or GCP to continuously evolve the maturity of my ML workflows, as well as to understand the underlying mechanisms of ML models.<br><br><br>
+
+## References:
+Mathematics for Machine Learning: https://mml-book.github.io/<br><br>
+
+MLOps architecture: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning<br><br>
+
+Azure MLOps: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mlops-maturity-model-with-azure-machine-learning/ba-p/3520625<br><br>
+
+AWS MLOps: https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/<br><br>
+
+GCP MLOps: https://cloud.google.com/architecture/architecture-for-mlops-using-tfx-kubeflow-pipelines-and-cloud-build<br><br>
