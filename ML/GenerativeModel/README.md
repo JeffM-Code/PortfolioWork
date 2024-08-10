@@ -11,7 +11,7 @@ The Q&A application with was then built with LangChain, through the integration 
 
 ## Architecture<br><br>
 <img src="architecture.png" width="790" height="420"/><br><br>
-*Project schematic.*<br><br>
+*Project architecture.*<br><br>
 
 ## Implementation
 <img src="dataset.png" width="890" height="490"/><br><br>
