@@ -9,8 +9,8 @@ A HuggingFace embedding model was used to create embeddings for each document in
 The Q&A application with was then built with LangChain, through the integration of SageMaker endpoints, then the dataset was prepared, via appropriate formatting of the dataset to build the knowledge database to be used for answering questions.<br><br><br>
 
 
-## Schematic:<br><br>
-<img src="schematic.png" alt="schematic" width="790" height="420"/><br><br>
+## Architecture<br><br>
+<img src="architecture.png" width="790" height="420"/><br><br>
 *Project schematic.*<br><br>
 
 ## Result
