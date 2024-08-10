@@ -24,7 +24,7 @@ The Q&A application with was then built with LangChain, through the integration 
 An example question was:<br>
 
 ```
-What algorithms are there?
+What algorithms are there for hyperparameter tuning?
 
 ```
 
