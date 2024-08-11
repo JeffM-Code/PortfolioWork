@@ -59,9 +59,13 @@ The *test set* is used to estimate the generalization performance, and the *vali
 Model algorithm is selected, trained, and tuned appropriately here, using the various methods described above including feature engineering.<br><br>
 
 ### Model selection
-Model selection techniques are highly specific depending on the problem, so these are done based on the needs of satisfying appropriate solution to problem proposed.<br><br>
+Model selection techniques are highly specific depending on the problem, so these are done based on the needs of satisfying appropriate solution to problem proposed.<br>
 
-Generally, this involves the application of mechanisms for assessing how a model generalizes to unseen test data.<br><br>
+Generally, this involves the application of mechanisms for assessing how a model generalizes to unseen test data.<br>
+
+There are many ways to approach model selection, including structuring it as a mathematical problem, such as in Bayesian model selection.<br><br>
+
+Of course, in production this will be done with software tooling.<br><br>
 
 ## *Deployment*:
 This is normally done on Streamlit, as it's a free platform to host models, and as models developed are normally small in size within their containers, it seems appropriate to host them there.<br><br>

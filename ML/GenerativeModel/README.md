@@ -14,10 +14,10 @@ The Q&A application with was then built with LangChain, through the integration 
 *Project architecture.*<br><br><br>
 
 ## Implementation
-<img src="dataset.png" width="890" height="490"/><br><br><br>
+<img src="dataset.png" width="950" height="520"/><br><br><br>
 *Custom dataset loading.*<br><br><br>
 
-<img src="demo.gif" width="890" height="490"/><br><br><br>
+<img src="demo.gif" width="950" height="520"/><br><br><br>
 *Functionality illustration.*<br><br><br>
 
 ## Performance
