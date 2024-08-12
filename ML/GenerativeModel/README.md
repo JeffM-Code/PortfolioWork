@@ -21,14 +21,14 @@ The Q&A application with was then built with LangChain, through the integration 
 *Functionality illustration.*<br><br><br>
 
 ## Performance
-An example question was:<br>
+Example question:<br>
 
 ```
 What algorithms are there for hyperparameter tuning?
 
 ```
 
-<br><br>For which the response was:<br>
+<br><br>Answer:<br>
 
 > <br>There are several algorithms for hyperparameter tuning, including Bayesian optimization, grid search, and random search. Bayesian optimization is a popular algorithm for hyperparameter tuning, as it uses Bayesian inference to update the hyperparameters based on the data. Grid search is another popular algorithm, but it can be computationally expensive. Random search is a simpler algorithm that randomly samples hyperparameters. Grid<br><br>
 
