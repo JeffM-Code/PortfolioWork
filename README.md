@@ -15,6 +15,3 @@ Here, I detail my general approach to developing machine learning models, and un
 
 ### Other:
 * [Retrieval Augmented Generation](https://github.com/JeffM-Code/PortfolioWork/tree/main/ML/GenerativeModel)<br><br><br>
-
-### Problem sets:
-* [Linear regression](https://colab.research.google.com/drive/1hA7DAK66ybnTuM1kfrBQknyX4M1PyHs_?usp=sharing)<br><br>
